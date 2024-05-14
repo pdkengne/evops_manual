@@ -1,0 +1,71 @@
+---
+title: "Setup evops app" 
+---
+
+
+# Install Docker Desktop on Windows
+
+This page contains the download URL and instructions on how to install Docker Desktop for Windows.
+Docker only supports Docker Desktop on Windows 10, Windows 11 Professional or Enterprise edition and  Windows Home or Education editions.
+To install Docker Desktop on Windows, one can follow the instructions below.
+
+1. Download the .exe installer file using the following link
+<https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe>
+
+2. Double-click on the downloaded .exe installer file.
+
+3. When prompted, ensure the **Use WSL 2 instead of Hyper-V** option on the Configuration page is selected.
+
+4. Follow the instructions on the installation wizard to authorize the installer and proceed with the install.
+
+5. When the installation is successful, select **Close** to complete the installation process.
+
+
+
+# Start Docker Desktop
+
+Docker Desktop does not start automatically after installation. To start Docker Desktop, one can procced as follows.
+
+1. Search for Docker.
+
+2. select **Docker Desktop** in the search results.
+
+
+:::{.callout-note}
+For the first start, the Docker menu displays the Docker Subscription Service Agreement. Select Accept to continue. Docker Desktop starts after you accept the terms. Note that Docker Desktop won't run if you do not agree to the terms.
+:::
+
+
+![listing_001](./listing_001.jpg){width=100%}
+
+
+
+![listing_002](./listing_002.jpg){width=100%}
+
+
+# Open Windows Terminal
+
+To open  Windows Terminal one can proceed as follows.
+
+1. Search for terminal.
+
+2. Select **Invite de commandes** in the search results.
+
+![listing_003](./listing_003.jpg){width=100%}
+
+![listing_004](./listing_004.jpg){width=100%}
+
+# Download evops app image
+
+To download the latest version of the docker image associated with the **extreme value operations** (evops) apps, one can proceed as follows.
+
+1. Open a Windows Terminal.
+
+2. Copy and paste the following command in the Terminal:
+```{bash}
+docker pull dkengne/evops:latest
+```
+
+3. Hit the **Enter** key on the keyboard to start. For the first time, this may take a while.
+
+![listing_005](./listing_005.jpg){width=100%}

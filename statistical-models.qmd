@@ -1,0 +1,63 @@
+---
+title: "Statistical models"
+---
+
+
+# Arithmetic mixture of gev laws
+
+
+## stationary model
+
+The extreme value model to estimate is the arithmetic mixture of generalized extreme value (GEV) distribution $G_{\mathbb{S}}$ defined by
+
+$$
+G_{\mathbb{S}}(x;\omega) = \sum_{j = 1}^{p} \omega_j\, G^{\omega_j}_{\mathbb{S}, j}(x),
+$$
+where 
+$x \in \mathbb{R};$
+$\omega = \left(\omega_1, \cdots, \omega_p \right);$
+$0 < \omega_j \leq 1;$ 
+$\sum_{j = 1}^{p}\omega_j = 1$ and
+$G_{\mathbb{S}, j}$ is a GEV distribution with parameters $\left(\gamma_{\mathbb{S}, j},\sigma_{\mathbb{S}, j},\mu_{\mathbb{S}, j}\right)\in \mathbb{R}^3.$
+
+
+## non-stationary model
+
+Let $y = (y_1, \cdots, y_q)\in \mathbb{R}^q$ be a vector of $q$ predictor variables.
+The extreme value model to estimate is the arithmetic mixture of generalized extreme value (GEV) distribution $G_{\mathbb{S}}(\cdot|y)$ defined by
+
+
+$$
+G_{\mathbb{S}}(x;\omega|y) = \sum_{j = 1}^{p} \omega_j\, G^{\omega_j}_{\mathbb{S}, j}(x|y),
+$$
+where 
+$x \in \mathbb{R};$
+$\omega = \left(\omega_1, \cdots, \omega_p \right);$
+$0 < \omega_j \leq 1;$ 
+$\sum_{j = 1}^{p}\omega_j = 1$ and
+$G_{\mathbb{S}, j}(\cdot|y)$ is a GEV distribution with parameters $\left(\gamma_{\mathbb{S}, j},\sigma_{\mathbb{S}, j}(y),\mu_{\mathbb{S}, j}(y)\right)\in \mathbb{R}^3.$
+
+with
+
+
+$$\mu_{\mathbb{S}, j}(y) = \mu_{\mathbb{S},j, 0} + \sum_{\ell = 1}^{q} \mu_{\mathbb{S},j,\ell}\, y_{\ell}$$ 
+
+and
+
+$$\sigma_{\mathbb{S}, j}(y) = \sigma_{\mathbb{S},j, 0} + \sum_{\ell = 1}^{q} \sigma_{\mathbb{S},j,\ell}\, y_{\ell}.$$
+
+
+# Geometric mixtures of gev laws
+
+
+The extreme value model to estimate is the geometric mixture of generalized extreme value (GEV) distribution $G_{\mathbb{P}}$ defined by
+$$
+G_{\mathbb{P}}(x;\omega) = \prod_{j = 1}^{p} G^{\omega_j}_{\mathbb{P}, j}(x),
+$$
+where 
+$x \in \mathbb{R};$
+$\omega = \left(\omega_1, \cdots, \omega_p \right);$
+$0 < \omega_j \leq 1;$ 
+$\sum_{j = 1}^{p}\omega_j = 1$ and
+$G_{\mathbb{P}, j}$ is a GEV distribution with parameters $\left(\gamma_{\mathbb{P}, j},\sigma_{\mathbb{P}, j},\mu_{\mathbb{P}, j}\right)\in \mathbb{R}^3.$
+

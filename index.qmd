@@ -1,0 +1,56 @@
+---
+title: "About"
+author:
+  - name: Pascal Alain Dkengne Sielenou and Stephane Girard
+    affiliations:
+      - Inria centre at the University Grenoble Alpes
+# author: "Pascal Alain Dkengne Sielenou and Stephane Girard"
+toc-expand: true
+---
+
+
+# Extreme values operations: evops app
+
+This guide is designed to serve your journey into the **evops app** which aims to extract knowledge from data using statistical models involving generalized extreme value (gev) distributions. By the end of this guide, you will have the knowledge to use evops app confidently. In each of the sections below, you will find overviews, guides, and step-by-step tutorials to walk you through the features of evops app.
+
+
+# Get started with evops app
+
+
+## Install
+
+Initial setup can be performed by following instructions provided in [Install](setup-evops.qmd). 
+
+
+## Manage
+
+The startup and upgrade procedures are described in [Manage](manage-evops.qmd). 
+
+
+## Manipulate
+
+
+The evops app is made of pipelines which are implemented in notebooks. The common tasks related to the manipulation of these notebooks are presented in [Manipulate](manipulate-evops.qmd). 
+
+
+## Exploit
+
+
+Moreover, the evops app pipelines can be classified into two groups. 
+
+* The former group is dedicated to data wrangling from raw data collected during an experimentation which aims to evaluate the impact of kinematic parameters and traffic scene object classes on car localization errors.
+
+* The latter group focuses on learning and exploiting two types of [statistical models](statistical-models.qmd), namely **arithmetic** and **geometric** mixture of gev distributions.
+
+
+
+### Data operations
+
+
+The usage of this data pipeline is explained in [Data](data-operations.qmd). 
+
+
+### Model operations
+
+
+The user manual of this model pipeline is exposed in [Model](model-operations.qmd). It is important to note that the pipeline related to the geometric mixture of gev models can be executed on custom data while the pipeline related to the arithmetic mixture of gev models is designed to run only on pre-processed data from evops app data pipeline.

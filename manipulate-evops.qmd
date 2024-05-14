@@ -1,0 +1,186 @@
+---
+title: "Manipulate evops app"
+---
+
+
+# Show list of pipelines
+
+To display the list of all available pipelines, one can proceed as follows.
+
+1. Click to hide or show the file browser.
+
+2. Click to display the folders of available pipelines and directories.
+
+
+![listing_024](./listing_024.jpg){width=100%}
+
+
+# Open a pipeline notebook
+
+To open a pipeline notebook, one can proceed as follows from the list of pipelines.
+
+1. Double click on the name of the desired pipeline folder name to access its content.
+
+2. Double click on the appropriate pipeline file name with extension **.ipynb** to display its contents in the main panel.
+
+
+![listing_025](./listing_025.jpg){width=100%}
+
+
+![listing_026](./listing_026.jpg){width=100%}
+
+
+# Close a pipeline notebook
+
+
+To close an open pipeline notebook, one can proceed as follows.
+
+1. Click on the considered open pipeline notebook tab in the main panel.
+
+2. Click the **X** in the top-right corner of the selected notebook tab.
+
+
+
+![listing_030](./listing_030.jpg){width=100%}
+
+
+An alternative procedure to close an open pipeline notebook consists to proceed as follows.
+
+1. Right-click on the considered open pipeline notebook tab in the main panel.
+
+2. Select **Close Tab** in the scrolling menu.
+
+
+
+![listing_031](./listing_031.jpg){width=100%}
+
+
+# show pipeline table of contents
+
+To show the table of contents of an open pipeline notebook, one can proceed as follows.
+
+1. Click on the considered open pipeline notebook tab in the main panel.
+
+2. Click to hide or show the table of contents associated with the selected notebook.
+
+
+![listing_027](./listing_027.jpg){width=100%}
+
+
+# Run all pipeline cells
+
+
+To automatically run all cells of an open pipeline notebook, one can proceed as follows.
+
+1. Click on the considered open pipeline notebook tab in the main panel.
+
+2. Enter appropriate information in the **input argument** section.
+
+3. Click on the icon of the **double play** button to execute all stages of the pipeline.
+
+
+
+![listing_028](./listing_028.jpg){width=100%}
+
+
+# Run an individual pipeline cell
+
+
+:::{.callout-important}
+Cells in the notebook must be executed sequentially, because an individual cell in the notebook may depend on some previous cells. 
+:::
+
+To run a specific cell of an open pipeline notebook, one can proceed as follows.
+
+1. Click on the considered open pipeline notebook tab in the main panel.
+
+2. Click on the notebook cell to execute.
+
+3. Click on the icon of the **play** button to execute all codes in the selected cell.
+
+
+![listing_029](./listing_029.jpg){width=100%}
+
+
+# Export all pipeline graphics
+
+
+To export all graphics generated in an open notebook, one can proceed as follows.
+
+1. Click on the considered open pipeline notebook tab in the main panel.
+
+2. Click on the **File** tab.
+
+3. Select **Save and Export Notebook As** in the scrolling menu.
+
+4. Select **Markdown** in the scrolling menu.
+
+5. Move on to the **Téléchargements** folder in the host computer.
+
+6. Right-click on the zipped file with the same base name as the considered notebook.
+
+7. Select **Extraire tout** in the scrolling menu.
+
+8. Specify the path to store the extracted files.
+
+9. Click on the **Extraire** button to extract files.
+
+10. Open the folder containing the extracted files to access the graphics.
+
+
+
+![listing_032](./listing_032.jpg){width=100%}
+
+
+![listing_033](./listing_033.jpg){width=100%}
+
+
+![listing_034](./listing_034.jpg){width=100%}
+
+
+![listing_034](./listing_035.jpg){width=100%}
+
+
+![listing_036](./listing_036.jpg){width=100%}
+
+
+![listing_037](./listing_037.jpg){width=100%}
+
+
+![listing_038](./listing_038.jpg){width=100%}
+
+
+
+# Upload a file to evops app
+
+
+To upload a csv file to a running evops app, one can proceed as follows.
+
+1. Click to hide or show the file browser.
+
+2. Click to display the folders of available pipelines and directories.
+
+3. Double-click on the **workspace** directory to open it.
+
+4. Click on the **Upload** icon to open a file browser in the host computer.
+
+5. Browse the host computer to find and select the csv file to upload. 
+
+6. Click on the **Open** button to upload the selected file.
+
+
+:::{.callout-note}
+The csv file uploaded by the above procedure is available in **workspace** directory  of the running evops app.
+:::
+
+
+![listing_039](./listing_039.jpg){width=100%}
+
+
+![listing_040](./listing_040.jpg){width=100%}
+
+
+![listing_041](./listing_041.jpg){width=100%}
+
+
+![listing_042](./listing_042.jpg){width=100%}

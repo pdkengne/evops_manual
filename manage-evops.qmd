@@ -1,0 +1,204 @@
+---
+title: "Manage evops app"
+---
+
+
+# Start evops app
+
+:::{.callout-important}
+Before starting for the first time, create a folder in your computer which is dedicated to the evops app data in the host computer. To illustrate, we have created a folder called **workdir** at the location:
+```{bash}
+C:\Users\HEWLETT-PACKARD\Documents\workdir
+```
+:::
+
+The docker image of the evops app can be run directly from Docker Desktop.
+Open a Docker Desktop and follows the 13 steps outlined in this walkthrough illustrated in the screenshots below.
+
+1. Click on the **Images** tab.
+
+2. Search for the image called **dkengne/evops** tagged as **latest**.
+
+3. Click on the **play** button related to the found image.
+
+4. Expand the **Optional settings**.
+
+5. In the *Host path*, click on the horizontal dotted button.
+
+6. Find and select the folder (eg. **workdir**) dedicated to the evops app data in the host computer.
+
+7. Click on **Selectionner un dossier** to validate your selection.
+
+8. In the *Container name*, enter a desired name. For instance: **evops_container**.
+
+9. In the first *Host port*, specify **8787** which is the port of Rstudio Server.
+
+10. In the second *Host port*, specify **8888** which is the port of JupyterLab Server.
+
+11. In the *Container path*, enter **/home/rstudio/worspace** which is the directory dedicated to the evops app data within the container.
+
+12. Select the **Run** button. That's it! The container is ready to use. 
+
+13. Click on the second link to open the evops app in a web browser.
+
+
+![listing_006](./listing_006.jpg){width=100%}
+
+
+![listing_007](./listing_007.jpg){width=100%}
+
+
+![listing_008](./listing_008.jpg){width=100%}
+
+
+![listing_009](./listing_009.jpg){width=100%}
+
+
+![listing_010](./listing_010.jpg){width=100%}
+
+
+![listing_011](./listing_011.jpg){width=100%}
+
+
+
+# Stop evops app
+
+A docker container in which the evops app is running can be stopped either from the Docker Desktop or from the Web Browser. 
+
+
+## From Docker Desktop
+
+To stop a running docker container from Docker Desktop, one can proceed as follows.
+
+1. Click on the **Containers** tab.
+
+2. Search for the name of the running container to stop.
+
+3. Click on the **stop** button related to the found container.
+
+
+
+![listing_012](./listing_012.jpg){width=100%}
+
+
+
+
+## From Web Browser
+
+
+To stop evops app which is open in a Web Browser, one can proceed as follows.
+
+1. Click on the **File** tab.
+
+2. Select **Shut Down** in the scrolling menu.
+
+3. Click the **X** in the top-right corner of the **JupyterLab** tab.
+
+
+![listing_013](./listing_013.jpg){width=100%}
+
+
+# Restart evops app
+
+To restart a stopped docker container associated with evops app, one can proceed as follows.
+
+1. Click on the **Containers** tab.
+
+2. Search for the name of the stopped container to restart.
+
+3. Click on the **play** button related to the found container.
+
+4. Click on the vertical dotted button right to the **play** button.
+
+5. Select **View details** in the scrolling menu.
+
+6. Click on the second link to open the evops app in a web browser.
+
+
+
+![listing_014](./listing_014.jpg){width=100%}
+
+
+![listing_015](./listing_015.jpg){width=100%}
+
+
+![listing_016](./listing_016.jpg){width=100%}
+
+
+# View resource utilization
+
+
+To view resource utilization of a running container from Docker Desktop, one can proceed as follows.
+
+1. Click on the **Containers** tab to display the list of running or stopped containers.
+
+2. Search for the running container concerned by resource consumption.
+
+3. Click on the vertical dotted button right to the **stop** button.
+
+4. Select **View details** in the scrolling menu.
+
+5. Click on the **Stats** tab to display resource utilization charts of the selected container.
+
+
+
+
+![listing_017](./listing_017.jpg){width=100%}
+
+![listing_018](./listing_018.jpg){width=100%}
+
+
+
+# Delete evops app container
+
+To delete a created docker container from Docker Desktop, one can proceed as follows.
+
+1. Click on the **Containers** tab to display the list of running or stopped containers.
+
+2. Check the box left to the container name to delete.
+
+3. Click on the **Delete** button.
+
+4. Click on the **Delete forever** button to confirm deletion.
+
+
+
+![listing_019](./listing_019.jpg){width=100%}
+
+
+![listing_020](./listing_020.jpg){width=100%}
+
+
+
+# Update evops app image
+
+Before the update of a docker image associated with the evops app, delete all docker containers (running or stopped) using the image to update.
+After that, one can follow the steps described below to update the **latest** version of docker image called **dkengne/evops** from Docker Desktop.
+
+1. Click on the **Images** tab to display the list of in use or unused images.
+
+2. Search for the image called **dkengne/evops** and tagged as **latest**.
+
+3. Click on the vertical dotted button left to the **trash** icon related to the found image.
+
+4. Select **Pull** in the scrolling menu to start update. 
+
+5. Check the box left to the old image called **dkengne/evops** and tagged as <**none**>.
+
+6.  Click on the **Delete** button.
+
+7. Click on the **Delete forever** button to confirm deletion.
+
+
+
+
+
+
+
+![listing_021](./listing_021.jpg){width=100%}
+
+
+![listing_022](./listing_022.jpg){width=100%}
+
+
+![listing_023](./listing_023.jpg){width=100%}

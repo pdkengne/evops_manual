@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: docs # _site docs
+
+website:
+  search:
+    location: sidebar
+    type: textbox
+  title: "evops app user manual"
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Home"
+        contents:
+          - index.qmd
+      - section: "Install"
+        contents:
+          - setup-evops.qmd
+      - section: "Manage"
+        contents:
+          - manage-evops.qmd
+      - section: "Manipulate"
+        contents:
+          - manipulate-evops.qmd
+      - section: "Data"
+        contents:
+          - data-operations.qmd
+      - section: "Model"
+        contents:
+          - statistical-models.qmd
+          - model-operations.qmd
+    
+    
+format:
+  html:
+    # theme: minty    # cosmo minty quartz spacelab solar superhero yeti, united, vapor, zephyr
+    theme:
+      light: minty
+      dark: solar
+    mainfont: arial
+    fontsize: 1.2rem
+    # fontcolor: "#0013d5"
+    # linkcolor: "#ff33f0"
+    # monofont: courrier new
+    css: styles.css
+    toc: true
+    mermaid:
+      theme: forest    # forest dark neutral
+
+
+

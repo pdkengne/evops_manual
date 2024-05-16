@@ -16,6 +16,7 @@ website:
           - index.qmd
       - section: "Install"
         contents:
+          - setup-docker.qmd
           - setup-evops.qmd
       - section: "Manage"
         contents:

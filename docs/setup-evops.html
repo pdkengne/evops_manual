@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./setup-evops.html">Install</a></li><li class="breadcrumb-item"><a href="./setup-evops.html">Setup evops app</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./setup-docker.html">Install</a></li><li class="breadcrumb-item"><a href="./setup-evops.html">Setup evops app</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -135,6 +135,12 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./setup-docker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Setup docker desktop</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./setup-evops.html" class="sidebar-item-text sidebar-link active">
@@ -227,9 +233,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#install-docker-desktop-on-windows" id="toc-install-docker-desktop-on-windows" class="nav-link active" data-scroll-target="#install-docker-desktop-on-windows">Install Docker Desktop on Windows</a></li>
-  <li><a href="#start-docker-desktop" id="toc-start-docker-desktop" class="nav-link" data-scroll-target="#start-docker-desktop">Start Docker Desktop</a></li>
-  <li><a href="#open-windows-terminal" id="toc-open-windows-terminal" class="nav-link" data-scroll-target="#open-windows-terminal">Open Windows Terminal</a></li>
+  <li><a href="#open-windows-terminal" id="toc-open-windows-terminal" class="nav-link active" data-scroll-target="#open-windows-terminal">Open Windows Terminal</a></li>
   <li><a href="#download-evops-app-image" id="toc-download-evops-app-image" class="nav-link" data-scroll-target="#download-evops-app-image">Download evops app image</a></li>
   </ul>
 </nav>
@@ -237,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./setup-evops.html">Install</a></li><li class="breadcrumb-item"><a href="./setup-evops.html">Setup evops app</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./setup-docker.html">Install</a></li><li class="breadcrumb-item"><a href="./setup-evops.html">Setup evops app</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Setup evops app</h1>
 </div>
@@ -256,50 +260,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="install-docker-desktop-on-windows" class="level1">
-<h1>Install Docker Desktop on Windows</h1>
-<p>This page contains the download URL and instructions on how to install Docker Desktop for Windows. Docker only supports Docker Desktop on Windows 10, Windows 11 Professional or Enterprise edition and Windows Home or Education editions. To install Docker Desktop on Windows, one can follow the instructions below.</p>
-<ol type="1">
-<li><p>Download the .exe installer file using the following link <a href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe" class="uri">https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe</a></p></li>
-<li><p>Double-click on the downloaded .exe installer file.</p></li>
-<li><p>When prompted, ensure the <strong>Use WSL 2 instead of Hyper-V</strong> option on the Configuration page is selected.</p></li>
-<li><p>Follow the instructions on the installation wizard to authorize the installer and proceed with the install.</p></li>
-<li><p>When the installation is successful, select <strong>Close</strong> to complete the installation process.</p></li>
-</ol>
-</section>
-<section id="start-docker-desktop" class="level1">
-<h1>Start Docker Desktop</h1>
-<p>Docker Desktop does not start automatically after installation. To start Docker Desktop, one can procced as follows.</p>
-<ol type="1">
-<li><p>Search for Docker.</p></li>
-<li><p>select <strong>Docker Desktop</strong> in the search results.</p></li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For the first start, the Docker menu displays the Docker Subscription Service Agreement. Select Accept to continue. Docker Desktop starts after you accept the terms. Note that Docker Desktop won’t run if you do not agree to the terms.</p>
-</div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./listing_001.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>listing_001</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./listing_002.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>listing_002</figcaption>
-</figure>
-</div>
-</section>
 <section id="open-windows-terminal" class="level1">
 <h1>Open Windows Terminal</h1>
 <p>To open Windows Terminal one can proceed as follows.</p>

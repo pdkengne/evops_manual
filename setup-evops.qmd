@@ -3,46 +3,6 @@ title: "Setup evops app"
 ---
 
 
-# Install Docker Desktop on Windows
-
-This page contains the download URL and instructions on how to install Docker Desktop for Windows.
-Docker only supports Docker Desktop on Windows 10, Windows 11 Professional or Enterprise edition and  Windows Home or Education editions.
-To install Docker Desktop on Windows, one can follow the instructions below.
-
-1. Download the .exe installer file using the following link
-<https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe>
-
-2. Double-click on the downloaded .exe installer file.
-
-3. When prompted, ensure the **Use WSL 2 instead of Hyper-V** option on the Configuration page is selected.
-
-4. Follow the instructions on the installation wizard to authorize the installer and proceed with the install.
-
-5. When the installation is successful, select **Close** to complete the installation process.
-
-
-
-# Start Docker Desktop
-
-Docker Desktop does not start automatically after installation. To start Docker Desktop, one can procced as follows.
-
-1. Search for Docker.
-
-2. select **Docker Desktop** in the search results.
-
-
-:::{.callout-note}
-For the first start, the Docker menu displays the Docker Subscription Service Agreement. Select Accept to continue. Docker Desktop starts after you accept the terms. Note that Docker Desktop won't run if you do not agree to the terms.
-:::
-
-
-![listing_001](./listing_001.jpg){width=100%}
-
-
-
-![listing_002](./listing_002.jpg){width=100%}
-
-
 # Open Windows Terminal
 
 To open  Windows Terminal one can proceed as follows.

@@ -15,7 +15,7 @@
     "href": "index.html#install",
     "title": "About",
     "section": "Install",
-    "text": "Install\nInitial setup can be performed by following instructions provided in Install.",
+    "text": "Install\nThe evops app is packaged into a docker image which can be pulled from Docker Hub. A Docker platform is thus required to run evops app. Docker Desktop offers a GUI (Graphical User Interface) docker platform on a computer. It can be used to easily manage and run evops app in an isolated environment called a container. Initial setup can be performed by successively following the instructions provided in Install docker desktop and Install evops app.",
     "crumbs": [
       "Home",
       "About"
@@ -59,7 +59,7 @@
     "href": "setup-evops.html",
     "title": "Setup evops app",
     "section": "",
-    "text": "Install Docker Desktop on Windows\nThis page contains the download URL and instructions on how to install Docker Desktop for Windows. Docker only supports Docker Desktop on Windows 10, Windows 11 Professional or Enterprise edition and Windows Home or Education editions. To install Docker Desktop on Windows, one can follow the instructions below.\n\nDownload the .exe installer file using the following link https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe\nDouble-click on the downloaded .exe installer file.\nWhen prompted, ensure the Use WSL 2 instead of Hyper-V option on the Configuration page is selected.\nFollow the instructions on the installation wizard to authorize the installer and proceed with the install.\nWhen the installation is successful, select Close to complete the installation process.\n\n\n\nStart Docker Desktop\nDocker Desktop does not start automatically after installation. To start Docker Desktop, one can procced as follows.\n\nSearch for Docker.\nselect Docker Desktop in the search results.\n\n\n\n\n\n\n\nNote\n\n\n\nFor the first start, the Docker menu displays the Docker Subscription Service Agreement. Select Accept to continue. Docker Desktop starts after you accept the terms. Note that Docker Desktop won’t run if you do not agree to the terms.\n\n\n\n\n\nlisting_001\n\n\n\n\n\nlisting_002\n\n\n\n\nOpen Windows Terminal\nTo open Windows Terminal one can proceed as follows.\n\nSearch for terminal.\nSelect Invite de commandes in the search results.\n\n\n\n\nlisting_003\n\n\n\n\n\nlisting_004\n\n\n\n\nDownload evops app image\nTo download the latest version of the docker image associated with the extreme value operations (evops) apps, one can proceed as follows.\n\nOpen a Windows Terminal.\nCopy and paste the following command in the Terminal:\n\ndocker pull dkengne/evops:latest\n\nHit the Enter key on the keyboard to start. For the first time, this may take a while.\n\n\n\n\nlisting_005",
+    "text": "Open Windows Terminal\nTo open Windows Terminal one can proceed as follows.\n\nSearch for terminal.\nSelect Invite de commandes in the search results.\n\n\n\n\nlisting_003\n\n\n\n\n\nlisting_004\n\n\n\n\nDownload evops app image\nTo download the latest version of the docker image associated with the extreme value operations (evops) apps, one can proceed as follows.\n\nOpen a Windows Terminal.\nCopy and paste the following command in the Terminal:\n\ndocker pull dkengne/evops:latest\n\nHit the Enter key on the keyboard to start. For the first time, this may take a while.\n\n\n\n\nlisting_005",
     "crumbs": [
       "Install",
       "Setup evops app"
@@ -191,6 +191,17 @@
     "crumbs": [
       "Model",
       "Statistical models"
+    ]
+  },
+  {
+    "objectID": "setup-docker.html",
+    "href": "setup-docker.html",
+    "title": "Setup docker desktop",
+    "section": "",
+    "text": "This page contains the download URL and instructions on how to install and configure Docker Desktop for Windows. Docker only supports Docker Desktop on Windows 10, Windows 11 Professional or Enterprise edition and Windows Home or Education editions.\n\nInstall Docker Desktop\nTo install Docker Desktop on Windows, a system administrator can follow the instructions below.\n\nDownload the .exe installer file using the following link https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe\nDouble-click on the downloaded .exe installer file.\nWhen prompted, ensure the Use WSL 2 instead of Hyper-V option on the Configuration page is selected.\nFollow the instructions on the installation wizard to authorize the installer and proceed with the install.\nWhen the installation is successful, select Close to complete the installation process.\n\n\n\nConfigure Docker Desktop\nA computer user having standard account named, say username, can run docker desktop without administrator privileges. For that, it is suffices to add the account username to the docker-users group. This operation can be performed by a system administrator as follows.\n\nSearch for powershell.\nSelect Windows PowerShell in the search results.\nSelect Exécuter en tant que administrateur to open Windows PowerShell as administrator.\nCopy and paste the command below in the opened PowerShell. Then, hit the Enter key on the keyboard to display list of all computer user accounts.\n\nget-localuser\n\nLocate the account named username under the Name column of the displayed output. For instance, in the second screenshot below, the term username refers to HEWLETT-PACKARD.\nCopy and paste the command below in the opened PowerShell after replacing username with the appropriate value. Then, hit the Enter key on the keyboard to add the account username to the docker-users group.\n\nnet localgroup docker-users username /add\n\nRestart your computer for the changes to take effect and open Docker Desktop without administrator privileges.\n\n\n\n\nlisting_043\n\n\n\n\n\nlisting_044\n\n\n\n\nStart Docker Desktop\nDocker Desktop does not start automatically after installation. To start Docker Desktop, one can procced as follows.\n\nSearch for Docker.\nselect Docker Desktop in the search results.\n\n\n\n\n\n\n\nNote\n\n\n\nFor the first start, the Docker menu displays the Docker Subscription Service Agreement. Select Accept to continue. Docker Desktop starts after you accept the terms. Note that Docker Desktop won’t run if you do not agree to the terms.\n\n\n\n\n\nlisting_001\n\n\n\n\n\nlisting_002",
+    "crumbs": [
+      "Install",
+      "Setup docker desktop"
     ]
   }
 ]

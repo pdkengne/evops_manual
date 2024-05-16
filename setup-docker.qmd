@@ -1,0 +1,81 @@
+---
+title: "Setup docker desktop"
+---
+
+
+This page contains the download URL and instructions on how to install and configure Docker Desktop for Windows. Docker only supports Docker Desktop on Windows 10, Windows 11 Professional or Enterprise edition and  Windows Home or Education editions.
+
+
+
+# Install Docker Desktop
+
+To install Docker Desktop on Windows, a system administrator can follow the instructions below.
+
+1. Download the .exe installer file using the following link
+<https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe>
+
+2. Double-click on the downloaded .exe installer file.
+
+3. When prompted, ensure the **Use WSL 2 instead of Hyper-V** option on the Configuration page is selected.
+
+4. Follow the instructions on the installation wizard to authorize the installer and proceed with the install.
+
+5. When the installation is successful, select **Close** to complete the installation process.
+
+
+
+# Configure Docker Desktop
+
+
+A computer user having standard account named, say **username**, can run docker desktop without administrator privileges. For that, it is suffices to add the account **username** to the docker-users group. This operation can be performed by a system administrator as follows.
+
+1. Search for powershell.
+
+2. Select **Windows PowerShell** in the search results.
+
+3. Select **Exécuter en tant que administrateur** to open Windows PowerShell as administrator.
+
+4. Copy and paste the command below in the opened PowerShell. Then, hit the **Enter** key on the keyboard to display list of all computer user accounts.
+```{bash}
+get-localuser
+```
+
+5. Locate the account named **username** under the **Name** column of the displayed output. For instance, in the second screenshot below, the term **username** refers to **HEWLETT-PACKARD**.
+
+6. Copy and paste the command below in the opened PowerShell after replacing **username** with the appropriate value. Then, hit the **Enter** key on the keyboard to add the account **username** to the docker-users group.
+```{bash}
+net localgroup docker-users username /add
+```
+
+
+7. Restart your computer for the changes to take effect and open Docker Desktop without administrator privileges. 
+
+
+![listing_043](./listing_043.jpg){width=100%}
+
+
+![listing_044](./listing_044.jpg){width=100%}
+
+
+
+
+# Start Docker Desktop
+
+Docker Desktop does not start automatically after installation. To start Docker Desktop, one can procced as follows.
+
+1. Search for Docker.
+
+2. select **Docker Desktop** in the search results.
+
+
+:::{.callout-note}
+For the first start, the Docker menu displays the Docker Subscription Service Agreement. Select Accept to continue. Docker Desktop starts after you accept the terms. Note that Docker Desktop won't run if you do not agree to the terms.
+:::
+
+
+![listing_001](./listing_001.jpg){width=100%}
+
+
+
+![listing_002](./listing_002.jpg){width=100%}
+

@@ -19,7 +19,9 @@ This guide is designed to serve your journey into the **evops app** which aims t
 
 ## Install
 
-Initial setup can be performed by following instructions provided in [Install](setup-evops.qmd). 
+
+The **evops app** is packaged into a docker image which can be pulled from Docker Hub. A Docker platform is thus required to run evops app. Docker Desktop offers a GUI (Graphical User Interface) docker platform on a computer. It can be used to easily manage and run evops app in an isolated environment called a container. Initial setup can be performed by successively following the instructions provided in [Install docker desktop](setup-docker.qmd) and [Install evops app](setup-evops.qmd). 
+
 
 
 ## Manage

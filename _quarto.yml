@@ -35,6 +35,7 @@ website:
     
 format:
   html:
+    page-navigation: true
     # theme: minty    # cosmo minty quartz spacelab solar superhero yeti, united, vapor, zephyr
     theme:
       light: minty

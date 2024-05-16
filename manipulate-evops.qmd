@@ -3,7 +3,7 @@ title: "Manipulate evops app"
 ---
 
 
-# Show list of pipelines
+##  Show list of pipelines
 
 To display the list of all available pipelines, one can proceed as follows.
 
@@ -15,7 +15,7 @@ To display the list of all available pipelines, one can proceed as follows.
 ![listing_024](./listing_024.jpg){width=100%}
 
 
-# Open a pipeline notebook
+##  Open a pipeline notebook
 
 To open a pipeline notebook, one can proceed as follows from the list of pipelines.
 
@@ -30,7 +30,7 @@ To open a pipeline notebook, one can proceed as follows from the list of pipelin
 ![listing_026](./listing_026.jpg){width=100%}
 
 
-# Close a pipeline notebook
+##  Close a pipeline notebook
 
 
 To close an open pipeline notebook, one can proceed as follows.
@@ -55,7 +55,7 @@ An alternative procedure to close an open pipeline notebook consists to proceed 
 ![listing_031](./listing_031.jpg){width=100%}
 
 
-# show pipeline table of contents
+##  show pipeline table of contents
 
 To show the table of contents of an open pipeline notebook, one can proceed as follows.
 
@@ -67,7 +67,7 @@ To show the table of contents of an open pipeline notebook, one can proceed as f
 ![listing_027](./listing_027.jpg){width=100%}
 
 
-# Run all pipeline cells
+##  Run all pipeline cells
 
 
 To automatically run all cells of an open pipeline notebook, one can proceed as follows.
@@ -83,7 +83,7 @@ To automatically run all cells of an open pipeline notebook, one can proceed as 
 ![listing_028](./listing_028.jpg){width=100%}
 
 
-# Run an individual pipeline cell
+##  Run an individual pipeline cell
 
 
 :::{.callout-important}
@@ -102,7 +102,7 @@ To run a specific cell of an open pipeline notebook, one can proceed as follows.
 ![listing_029](./listing_029.jpg){width=100%}
 
 
-# Export all pipeline graphics
+##  Export all pipeline graphics
 
 
 To export all graphics generated in an open notebook, one can proceed as follows.
@@ -151,7 +151,7 @@ To export all graphics generated in an open notebook, one can proceed as follows
 
 
 
-# Upload a file to evops app
+##  Upload a file to evops app
 
 
 To upload a csv file to a running evops app, one can proceed as follows.

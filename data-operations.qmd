@@ -3,7 +3,7 @@ title: "Data operations"
 ---
 
 
-<!-- # Exploit evops app data pipelines -->
+<!-- ##  Exploit evops app data pipelines -->
 
 
 The evops app pipelines must be executed in the order of the following sections which are tagged as **Optional** (that is, can be skipped), **Mandatory** (that is, to run absolutely), **Recommended** (that is, can provide useful information to consider in the next pipeline) or **Independent** (that is, can be executed independently on previous pipelines).
@@ -26,7 +26,7 @@ it is recommended to delete all results generated during the previous run unless
 
 
 
-# Extract Sample Data (esd) pipeline: *Optional*
+##  Extract Sample Data (esd) pipeline: *Optional*
 
 
 The notebook associated with **esd_pipeline** is the file **esd_pipeline.ipynb**.
@@ -64,7 +64,7 @@ flowchart LR
 
 
 
-# Extract Transform Load (etl) pipeline: *Mandatory*
+##  Extract Transform Load (etl) pipeline: *Mandatory*
 
 
 The notebook associated with **etl_pipeline** is the file **etl_pipeline.ipynb**.
@@ -120,7 +120,7 @@ flowchart LR
 
 
 
-# Outlier Data Extraction (ode) pipeline: *Optional*
+##  Outlier Data Extraction (ode) pipeline: *Optional*
 
 
 The notebook associated with **ode_pipeline** is the file **ode_pipeline.ipynb**.
@@ -187,7 +187,7 @@ flowchart LR
 
 
 
-# Object Detection Statistics (ods) pipeline: *Recommended*
+##  Object Detection Statistics (ods) pipeline: *Recommended*
 
 
 The notebook associated with **ods_pipeline** is the file **ods_pipeline.ipynb**.
@@ -208,7 +208,7 @@ flowchart LR
 
 
 
-# Impute Transform Load (itl) pipeline: *Mandatory*
+##  Impute Transform Load (itl) pipeline: *Mandatory*
 
 
 :::{.callout-important}

@@ -3,13 +3,13 @@ title: "Model operations"
 ---
 
 
-<!-- # Exploit evops app model pipelines -->
+<!-- ##  Exploit evops app model pipelines -->
 
 
 
 
 
-# Statistical Learning Analysis (sla) pipeline: *Mandatory*
+##  Statistical Learning Analysis (sla) pipeline: *Mandatory*
 
 
 :::{.callout-note}
@@ -92,7 +92,7 @@ flowchart LR
 
 
 
-# Extreme Value Analysis (eva) pipeline: *Independent*
+##  Extreme Value Analysis (eva) pipeline: *Independent*
 
 
 There are currently four notebooks associated with **eva_pipeline**, namely **eva_pipeline_normal.ipynb**, **eva_pipeline_gamma.ipynb**, **eva_pipeline_gev.ipynb** and **eva_pipeline.ipynb**.  The first three notebooks are intended to test **eva_pipeline** on simulated data (see @sec-evasimuateddata for more details) whereas the last notebook is intended to apply **eva_pipeline** on custom data (see @sec-evarealdata for more details).
@@ -101,7 +101,7 @@ There are currently four notebooks associated with **eva_pipeline**, namely **ev
 
 
 
-## Illustration on simulated datasets {#sec-evasimuateddata}
+###  Illustration on simulated datasets {#sec-evasimuateddata}
 
 
 :::{.callout-note}
@@ -111,7 +111,7 @@ Rerunning the pipelines of this section with modified input arguments will overw
 
 
 
-### Normal Distribution
+####  Normal Distribution
 
 
 The notebook associated with **eva_pipeline** for data from a normal distribution is the file **eva_pipeline_normal.ipynb**. The main objective of this pipeline is to estimate the parameters of **stationary** geometric mixture of gev models based on simulated data from a normal probability distribution and to exploit the fitted model to predict return levels and expected exceedances associated with given return periods.
@@ -155,7 +155,7 @@ flowchart LR
 ```
 
 
-### Gamma Distribution
+####  Gamma Distribution
 
 
 
@@ -203,7 +203,7 @@ flowchart LR
 
 
 
-### GEV Distribution
+####  GEV Distribution
 
 
 The notebook associated with **eva_pipeline** for data from a gev distribution is the file **eva_pipeline_gev.ipynb**. The main objective of this pipeline is to estimate the parameters of **stationary** geometric mixture of gev models based on simulated data from a gev probability distribution and to exploit the fitted model to predict return levels and expected exceedances associated with given return periods.
@@ -251,7 +251,7 @@ flowchart LR
 
 
 
-## Application on real dataset {#sec-evarealdata}
+###  Application on real dataset {#sec-evarealdata}
 
 
 :::{.callout-note}

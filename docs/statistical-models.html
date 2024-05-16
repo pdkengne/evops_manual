@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./model-operations.html" rel="next">
+<link href="./data-operations.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -293,17 +295,17 @@ window.Quarto = {
 </header>
 
 
-<section id="arithmetic-mixture-of-gev-laws" class="level1">
-<h1>Arithmetic mixture of gev laws</h1>
-<section id="stationary-model" class="level2">
-<h2 class="anchored" data-anchor-id="stationary-model">stationary model</h2>
+<section id="arithmetic-mixture-of-gev-laws" class="level2">
+<h2 class="anchored" data-anchor-id="arithmetic-mixture-of-gev-laws">Arithmetic mixture of gev laws</h2>
+<section id="stationary-model" class="level3">
+<h3 class="anchored" data-anchor-id="stationary-model">stationary model</h3>
 <p>The extreme value model to estimate is the arithmetic mixture of generalized extreme value (GEV) distribution <span class="math inline">\(G_{\mathbb{S}}\)</span> defined by</p>
 <p><span class="math display">\[
 G_{\mathbb{S}}(x;\omega) = \sum_{j = 1}^{p} \omega_j\, G^{\omega_j}_{\mathbb{S}, j}(x),
 \]</span> where <span class="math inline">\(x \in \mathbb{R};\)</span> <span class="math inline">\(\omega = \left(\omega_1, \cdots, \omega_p \right);\)</span> <span class="math inline">\(0 &lt; \omega_j \leq 1;\)</span> <span class="math inline">\(\sum_{j = 1}^{p}\omega_j = 1\)</span> and <span class="math inline">\(G_{\mathbb{S}, j}\)</span> is a GEV distribution with parameters <span class="math inline">\(\left(\gamma_{\mathbb{S}, j},\sigma_{\mathbb{S}, j},\mu_{\mathbb{S}, j}\right)\in \mathbb{R}^3.\)</span></p>
 </section>
-<section id="non-stationary-model" class="level2">
-<h2 class="anchored" data-anchor-id="non-stationary-model">non-stationary model</h2>
+<section id="non-stationary-model" class="level3">
+<h3 class="anchored" data-anchor-id="non-stationary-model">non-stationary model</h3>
 <p>Let <span class="math inline">\(y = (y_1, \cdots, y_q)\in \mathbb{R}^q\)</span> be a vector of <span class="math inline">\(q\)</span> predictor variables. The extreme value model to estimate is the arithmetic mixture of generalized extreme value (GEV) distribution <span class="math inline">\(G_{\mathbb{S}}(\cdot|y)\)</span> defined by</p>
 <p><span class="math display">\[
 G_{\mathbb{S}}(x;\omega|y) = \sum_{j = 1}^{p} \omega_j\, G^{\omega_j}_{\mathbb{S}, j}(x|y),
@@ -314,8 +316,8 @@ G_{\mathbb{S}}(x;\omega|y) = \sum_{j = 1}^{p} \omega_j\, G^{\omega_j}_{\mathbb{S
 <p><span class="math display">\[\sigma_{\mathbb{S}, j}(y) = \sigma_{\mathbb{S},j, 0} + \sum_{\ell = 1}^{q} \sigma_{\mathbb{S},j,\ell}\, y_{\ell}.\]</span></p>
 </section>
 </section>
-<section id="geometric-mixtures-of-gev-laws" class="level1">
-<h1>Geometric mixtures of gev laws</h1>
+<section id="geometric-mixtures-of-gev-laws" class="level2">
+<h2 class="anchored" data-anchor-id="geometric-mixtures-of-gev-laws">Geometric mixtures of gev laws</h2>
 <p>The extreme value model to estimate is the geometric mixture of generalized extreme value (GEV) distribution <span class="math inline">\(G_{\mathbb{P}}\)</span> defined by <span class="math display">\[
 G_{\mathbb{P}}(x;\omega) = \prod_{j = 1}^{p} G^{\omega_j}_{\mathbb{P}, j}(x),
 \]</span> where <span class="math inline">\(x \in \mathbb{R};\)</span> <span class="math inline">\(\omega = \left(\omega_1, \cdots, \omega_p \right);\)</span> <span class="math inline">\(0 &lt; \omega_j \leq 1;\)</span> <span class="math inline">\(\sum_{j = 1}^{p}\omega_j = 1\)</span> and <span class="math inline">\(G_{\mathbb{P}, j}\)</span> is a GEV distribution with parameters <span class="math inline">\(\left(\gamma_{\mathbb{P}, j},\sigma_{\mathbb{P}, j},\mu_{\mathbb{P}, j}\right)\in \mathbb{R}^3.\)</span></p>
@@ -855,6 +857,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./data-operations.html" class="pagination-link  aria-label=" data="" operations"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data operations</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./model-operations.html" class="pagination-link" aria-label="Model operations">
+        <span class="nav-page-text">Model operations</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

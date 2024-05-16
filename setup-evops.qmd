@@ -3,7 +3,7 @@ title: "Setup evops app"
 ---
 
 
-# Open Windows Terminal
+##  Open Windows Terminal
 
 To open  Windows Terminal one can proceed as follows.
 
@@ -15,7 +15,7 @@ To open  Windows Terminal one can proceed as follows.
 
 ![listing_004](./listing_004.jpg){width=100%}
 
-# Download evops app image
+##  Download evops app image
 
 To download the latest version of the docker image associated with the **extreme value operations** (evops) apps, one can proceed as follows.
 

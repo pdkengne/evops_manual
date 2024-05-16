@@ -3,10 +3,10 @@ title: "Statistical models"
 ---
 
 
-# Arithmetic mixture of gev laws
+##  Arithmetic mixture of gev laws
 
 
-## stationary model
+###  stationary model
 
 The extreme value model to estimate is the arithmetic mixture of generalized extreme value (GEV) distribution $G_{\mathbb{S}}$ defined by
 
@@ -21,7 +21,7 @@ $\sum_{j = 1}^{p}\omega_j = 1$ and
 $G_{\mathbb{S}, j}$ is a GEV distribution with parameters $\left(\gamma_{\mathbb{S}, j},\sigma_{\mathbb{S}, j},\mu_{\mathbb{S}, j}\right)\in \mathbb{R}^3.$
 
 
-## non-stationary model
+###  non-stationary model
 
 Let $y = (y_1, \cdots, y_q)\in \mathbb{R}^q$ be a vector of $q$ predictor variables.
 The extreme value model to estimate is the arithmetic mixture of generalized extreme value (GEV) distribution $G_{\mathbb{S}}(\cdot|y)$ defined by
@@ -47,7 +47,7 @@ and
 $$\sigma_{\mathbb{S}, j}(y) = \sigma_{\mathbb{S},j, 0} + \sum_{\ell = 1}^{q} \sigma_{\mathbb{S},j,\ell}\, y_{\ell}.$$
 
 
-# Geometric mixtures of gev laws
+##  Geometric mixtures of gev laws
 
 
 The extreme value model to estimate is the geometric mixture of generalized extreme value (GEV) distribution $G_{\mathbb{P}}$ defined by

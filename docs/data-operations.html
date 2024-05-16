@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./statistical-models.html" rel="next">
+<link href="./manipulate-evops.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -267,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- # Exploit evops app data pipelines -->
+<!-- ##  Exploit evops app data pipelines -->
 <p>The evops app pipelines must be executed in the order of the following sections which are tagged as <strong>Optional</strong> (that is, can be skipped), <strong>Mandatory</strong> (that is, to run absolutely), <strong>Recommended</strong> (that is, can provide useful information to consider in the next pipeline) or <strong>Independent</strong> (that is, can be executed independently on previous pipelines).</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -308,8 +310,8 @@ Tip
 <p>Before rerunning a pipeline with modified input arguments on datasets from a given experimentation, it is recommended to delete all results generated during the previous run unless specify, in which case previous results will be overwritten.</p>
 </div>
 </div>
-<section id="extract-sample-data-esd-pipeline-optional" class="level1">
-<h1>Extract Sample Data (esd) pipeline: <em>Optional</em></h1>
+<section id="extract-sample-data-esd-pipeline-optional" class="level2">
+<h2 class="anchored" data-anchor-id="extract-sample-data-esd-pipeline-optional">Extract Sample Data (esd) pipeline: <em>Optional</em></h2>
 <p>The notebook associated with <strong>esd_pipeline</strong> is the file <strong>esd_pipeline.ipynb</strong>. The main objective of <strong>esd_pipeline</strong> is to extract a small sample of size assigned to the variable <strong>data_sample_size</strong> from all data stored in the folder whose name is assigned to the variable <strong>experimentation_dir</strong> which contains the following elements.</p>
 <ul>
 <li><p><strong>ground_truth_data</strong>: It is a variable for the name of the csv file of ground truth data.</p></li>
@@ -345,8 +347,8 @@ Tip
 </div>
 </div>
 </section>
-<section id="extract-transform-load-etl-pipeline-mandatory" class="level1">
-<h1>Extract Transform Load (etl) pipeline: <em>Mandatory</em></h1>
+<section id="extract-transform-load-etl-pipeline-mandatory" class="level2">
+<h2 class="anchored" data-anchor-id="extract-transform-load-etl-pipeline-mandatory">Extract Transform Load (etl) pipeline: <em>Mandatory</em></h2>
 <p>The notebook associated with <strong>etl_pipeline</strong> is the file <strong>etl_pipeline.ipynb</strong>. The main objective of this pipeline is to construct the file <strong>merged_data.csv</strong>. This file contains information on the instantaneous positions and velocities of the car sensors studied, the statistics of occurrences as well as the areas and locations associated with all classes of traffic scene objects. To produce the file <strong>merged_data.csv</strong>, the <strong>etl_pipeline</strong> requires two main information as input. The former is the folder whose name is assigned to the variable <strong>experimentation_dir</strong> which contains the following elements.</p>
 <ul>
 <li><p><strong>ground_truth_data</strong>: It is a variable for the name of the csv file of ground truth data.</p></li>
@@ -392,8 +394,8 @@ Tip
 </div>
 </div>
 </section>
-<section id="outlier-data-extraction-ode-pipeline-optional" class="level1">
-<h1>Outlier Data Extraction (ode) pipeline: <em>Optional</em></h1>
+<section id="outlier-data-extraction-ode-pipeline-optional" class="level2">
+<h2 class="anchored" data-anchor-id="outlier-data-extraction-ode-pipeline-optional">Outlier Data Extraction (ode) pipeline: <em>Optional</em></h2>
 <p>The notebook associated with <strong>ode_pipeline</strong> is the file <strong>ode_pipeline.ipynb</strong>. The main objective of this pipeline is to extract all outliers associated a given variable. Before running the <strong>ode_pipeline</strong>, appropriate values must be assigned to the following input arguments.</p>
 <ul>
 <li><p><strong>coefficient_iqr</strong>: It is a variable for the real value used to calculate the bounds of an interval out of which data are considered as outliers.</p></li>
@@ -470,8 +472,8 @@ Tip
 </div>
 </div>
 </section>
-<section id="object-detection-statistics-ods-pipeline-recommended" class="level1">
-<h1>Object Detection Statistics (ods) pipeline: <em>Recommended</em></h1>
+<section id="object-detection-statistics-ods-pipeline-recommended" class="level2">
+<h2 class="anchored" data-anchor-id="object-detection-statistics-ods-pipeline-recommended">Object Detection Statistics (ods) pipeline: <em>Recommended</em></h2>
 <p>The notebook associated with <strong>ods_pipeline</strong> is the file <strong>ods_pipeline.ipynb</strong>. The main objective of this pipeline is to extract statistics on the total number of detections associated with each class of objects. These statistics along with the related bar chart are displayed in the notebook. The detection statistics are also stored in the csv file named <strong>detection_statistics.csv</strong> in the directory whose name is assigned to the input argument <strong>experimentation_dir</strong>. The <strong>ods_pipeline</strong> depends on the <strong>etl_pipeline</strong> since its execution requires that the csv file <strong>merged_data.csv</strong> be present in the directory referenced by the variable <strong>experimentation_dir</strong>. This is why the name <strong>merged_data.csv</strong> is assigned by default to the input argument <strong>merged_data</strong>.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -492,8 +494,8 @@ Tip
 </div>
 </div>
 </section>
-<section id="impute-transform-load-itl-pipeline-mandatory" class="level1">
-<h1>Impute Transform Load (itl) pipeline: <em>Mandatory</em></h1>
+<section id="impute-transform-load-itl-pipeline-mandatory" class="level2">
+<h2 class="anchored" data-anchor-id="impute-transform-load-itl-pipeline-mandatory">Impute Transform Load (itl) pipeline: <em>Mandatory</em></h2>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1137,6 +1139,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./manipulate-evops.html" class="pagination-link  aria-label=" manipulate="" evops="" app"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Manipulate evops app</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./statistical-models.html" class="pagination-link" aria-label="Statistical models">
+        <span class="nav-page-text">Statistical models</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

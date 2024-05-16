@@ -241,11 +241,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#install" id="toc-install" class="nav-link" data-scroll-target="#install">Install</a></li>
   <li><a href="#manage" id="toc-manage" class="nav-link" data-scroll-target="#manage">Manage</a></li>
   <li><a href="#manipulate" id="toc-manipulate" class="nav-link" data-scroll-target="#manipulate">Manipulate</a></li>
-  <li><a href="#exploit" id="toc-exploit" class="nav-link" data-scroll-target="#exploit">Exploit</a>
-  <ul class="collapse">
-  <li><a href="#data-operations" id="toc-data-operations" class="nav-link" data-scroll-target="#data-operations">Data operations</a></li>
-  <li><a href="#model-operations" id="toc-model-operations" class="nav-link" data-scroll-target="#model-operations">Model operations</a></li>
-  </ul></li>
+  <li><a href="#exploit" id="toc-exploit" class="nav-link" data-scroll-target="#exploit">Exploit</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -285,37 +281,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="extreme-values-operations-evops-app" class="level1">
-<h1>Extreme values operations: evops app</h1>
+<section id="extreme-values-operations-evops-app" class="level2">
+<h2 class="anchored" data-anchor-id="extreme-values-operations-evops-app">Extreme values operations: evops app</h2>
 <p>This guide is designed to serve your journey into the <strong>evops app</strong> which aims to extract knowledge from data using statistical models involving generalized extreme value (gev) distributions. By the end of this guide, you will have the knowledge to use evops app confidently. In each of the sections below, you will find overviews, guides, and step-by-step tutorials to walk you through the features of evops app.</p>
 </section>
-<section id="get-started-with-evops-app" class="level1">
-<h1>Get started with evops app</h1>
-<section id="install" class="level2">
-<h2 class="anchored" data-anchor-id="install">Install</h2>
+<section id="get-started-with-evops-app" class="level2">
+<h2 class="anchored" data-anchor-id="get-started-with-evops-app">Get started with evops app</h2>
+<section id="install" class="level3">
+<h3 class="anchored" data-anchor-id="install">Install</h3>
 <p>The <strong>evops app</strong> is packaged into a docker image which can be pulled from Docker Hub. A Docker platform is thus required to run evops app. Docker Desktop offers a GUI (Graphical User Interface) docker platform on a computer. It can be used to easily manage and run evops app in an isolated environment called a container. Initial setup can be performed by successively following the instructions provided in <a href="./setup-docker.html">Install docker desktop</a> and <a href="./setup-evops.html">Install evops app</a>.</p>
 </section>
-<section id="manage" class="level2">
-<h2 class="anchored" data-anchor-id="manage">Manage</h2>
+<section id="manage" class="level3">
+<h3 class="anchored" data-anchor-id="manage">Manage</h3>
 <p>The startup and upgrade procedures are described in <a href="./manage-evops.html">Manage</a>.</p>
 </section>
-<section id="manipulate" class="level2">
-<h2 class="anchored" data-anchor-id="manipulate">Manipulate</h2>
+<section id="manipulate" class="level3">
+<h3 class="anchored" data-anchor-id="manipulate">Manipulate</h3>
 <p>The evops app is made of pipelines which are implemented in notebooks. The common tasks related to the manipulation of these notebooks are presented in <a href="./manipulate-evops.html">Manipulate</a>.</p>
 </section>
-<section id="exploit" class="level2">
-<h2 class="anchored" data-anchor-id="exploit">Exploit</h2>
+<section id="exploit" class="level3">
+<h3 class="anchored" data-anchor-id="exploit">Exploit</h3>
 <p>Moreover, the evops app pipelines can be classified into two groups.</p>
 <ul>
 <li><p>The former group is dedicated to data wrangling from raw data collected during an experimentation which aims to evaluate the impact of kinematic parameters and traffic scene object classes on car localization errors.</p></li>
 <li><p>The latter group focuses on learning and exploiting two types of <a href="./statistical-models.html">statistical models</a>, namely <strong>arithmetic</strong> and <strong>geometric</strong> mixture of gev distributions.</p></li>
 </ul>
-<section id="data-operations" class="level3">
-<h3 class="anchored" data-anchor-id="data-operations">Data operations</h3>
+<section id="data-operations" class="level4">
+<h4 class="anchored" data-anchor-id="data-operations">Data operations</h4>
 <p>The usage of this data pipeline is explained in <a href="./data-operations.html">Data</a>.</p>
 </section>
-<section id="model-operations" class="level3">
-<h3 class="anchored" data-anchor-id="model-operations">Model operations</h3>
+<section id="model-operations" class="level4">
+<h4 class="anchored" data-anchor-id="model-operations">Model operations</h4>
 <p>The user manual of this model pipeline is exposed in <a href="./model-operations.html">Model</a>. It is important to note that the pipeline related to the geometric mixture of gev models can be executed on custom data while the pipeline related to the arithmetic mixture of gev models is designed to run only on pre-processed data from evops app data pipeline.</p>
 
 

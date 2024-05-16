@@ -7,7 +7,7 @@ This page contains the download URL and instructions on how to install and confi
 
 
 
-# Install Docker Desktop
+##  Install Docker Desktop
 
 To install Docker Desktop on Windows, a system administrator can follow the instructions below.
 
@@ -24,7 +24,7 @@ To install Docker Desktop on Windows, a system administrator can follow the inst
 
 
 
-# Configure Docker Desktop
+##  Configure Docker Desktop
 
 
 A computer user having standard account named, say **username**, can run docker desktop without administrator privileges. For that, it is suffices to add the account **username** to the docker-users group. This operation can be performed by a system administrator as follows.
@@ -59,7 +59,7 @@ net localgroup docker-users username /add
 
 
 
-# Start Docker Desktop
+##  Start Docker Desktop
 
 Docker Desktop does not start automatically after installation. To start Docker Desktop, one can procced as follows.
 

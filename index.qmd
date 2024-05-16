@@ -9,33 +9,33 @@ toc-expand: true
 ---
 
 
-# Extreme values operations: evops app
+## Extreme values operations: evops app
 
 This guide is designed to serve your journey into the **evops app** which aims to extract knowledge from data using statistical models involving generalized extreme value (gev) distributions. By the end of this guide, you will have the knowledge to use evops app confidently. In each of the sections below, you will find overviews, guides, and step-by-step tutorials to walk you through the features of evops app.
 
 
-# Get started with evops app
+## Get started with evops app
 
 
-## Install
+### Install
 
 
 The **evops app** is packaged into a docker image which can be pulled from Docker Hub. A Docker platform is thus required to run evops app. Docker Desktop offers a GUI (Graphical User Interface) docker platform on a computer. It can be used to easily manage and run evops app in an isolated environment called a container. Initial setup can be performed by successively following the instructions provided in [Install docker desktop](setup-docker.qmd) and [Install evops app](setup-evops.qmd). 
 
 
 
-## Manage
+### Manage
 
 The startup and upgrade procedures are described in [Manage](manage-evops.qmd). 
 
 
-## Manipulate
+### Manipulate
 
 
 The evops app is made of pipelines which are implemented in notebooks. The common tasks related to the manipulation of these notebooks are presented in [Manipulate](manipulate-evops.qmd). 
 
 
-## Exploit
+### Exploit
 
 
 Moreover, the evops app pipelines can be classified into two groups. 
@@ -46,13 +46,13 @@ Moreover, the evops app pipelines can be classified into two groups.
 
 
 
-### Data operations
+#### Data operations
 
 
 The usage of this data pipeline is explained in [Data](data-operations.qmd). 
 
 
-### Model operations
+#### Model operations
 
 
 The user manual of this model pipeline is exposed in [Model](model-operations.qmd). It is important to note that the pipeline related to the geometric mixture of gev models can be executed on custom data while the pipeline related to the arithmetic mixture of gev models is designed to run only on pre-processed data from evops app data pipeline.

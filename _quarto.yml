@@ -41,7 +41,7 @@ format:
       light: minty
       dark: solar
     mainfont: arial
-    fontsize: 1.2rem
+    # fontsize: 1.2rem
     # fontcolor: "#0013d5"
     # linkcolor: "#ff33f0"
     # monofont: courrier new

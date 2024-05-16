@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./statistical-models.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -240,12 +241,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#statistical-learning-analysis-sla-pipeline-mandatory" id="toc-statistical-learning-analysis-sla-pipeline-mandatory" class="nav-link active" data-scroll-target="#statistical-learning-analysis-sla-pipeline-mandatory">Statistical Learning Analysis (sla) pipeline: <em>Mandatory</em></a></li>
   <li><a href="#extreme-value-analysis-eva-pipeline-independent" id="toc-extreme-value-analysis-eva-pipeline-independent" class="nav-link" data-scroll-target="#extreme-value-analysis-eva-pipeline-independent">Extreme Value Analysis (eva) pipeline: <em>Independent</em></a>
   <ul class="collapse">
-  <li><a href="#sec-evasimuateddata" id="toc-sec-evasimuateddata" class="nav-link" data-scroll-target="#sec-evasimuateddata">Illustration on simulated datasets</a>
-  <ul class="collapse">
-  <li><a href="#normal-distribution" id="toc-normal-distribution" class="nav-link" data-scroll-target="#normal-distribution">Normal Distribution</a></li>
-  <li><a href="#gamma-distribution" id="toc-gamma-distribution" class="nav-link" data-scroll-target="#gamma-distribution">Gamma Distribution</a></li>
-  <li><a href="#gev-distribution" id="toc-gev-distribution" class="nav-link" data-scroll-target="#gev-distribution">GEV Distribution</a></li>
-  </ul></li>
+  <li><a href="#sec-evasimuateddata" id="toc-sec-evasimuateddata" class="nav-link" data-scroll-target="#sec-evasimuateddata">Illustration on simulated datasets</a></li>
   <li><a href="#sec-evarealdata" id="toc-sec-evarealdata" class="nav-link" data-scroll-target="#sec-evarealdata">Application on real dataset</a></li>
   </ul></li>
   </ul>
@@ -273,9 +269,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- # Exploit evops app model pipelines -->
-<section id="statistical-learning-analysis-sla-pipeline-mandatory" class="level1">
-<h1>Statistical Learning Analysis (sla) pipeline: <em>Mandatory</em></h1>
+<!-- ##  Exploit evops app model pipelines -->
+<section id="statistical-learning-analysis-sla-pipeline-mandatory" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-learning-analysis-sla-pipeline-mandatory">Statistical Learning Analysis (sla) pipeline: <em>Mandatory</em></h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -369,11 +365,11 @@ Note
 </div>
 </div>
 </section>
-<section id="extreme-value-analysis-eva-pipeline-independent" class="level1">
-<h1>Extreme Value Analysis (eva) pipeline: <em>Independent</em></h1>
+<section id="extreme-value-analysis-eva-pipeline-independent" class="level2">
+<h2 class="anchored" data-anchor-id="extreme-value-analysis-eva-pipeline-independent">Extreme Value Analysis (eva) pipeline: <em>Independent</em></h2>
 <p>There are currently four notebooks associated with <strong>eva_pipeline</strong>, namely <strong>eva_pipeline_normal.ipynb</strong>, <strong>eva_pipeline_gamma.ipynb</strong>, <strong>eva_pipeline_gev.ipynb</strong> and <strong>eva_pipeline.ipynb</strong>. The first three notebooks are intended to test <strong>eva_pipeline</strong> on simulated data (see <a href="#sec-evasimuateddata" class="quarto-xref">Section&nbsp;2.1</a> for more details) whereas the last notebook is intended to apply <strong>eva_pipeline</strong> on custom data (see <a href="#sec-evarealdata" class="quarto-xref">Section&nbsp;2.2</a> for more details).</p>
-<section id="sec-evasimuateddata" class="level2">
-<h2 class="anchored" data-anchor-id="sec-evasimuateddata">Illustration on simulated datasets</h2>
+<section id="sec-evasimuateddata" class="level3">
+<h3 class="anchored" data-anchor-id="sec-evasimuateddata">Illustration on simulated datasets</h3>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -387,8 +383,8 @@ Note
 <p>Rerunning the pipelines of this section with modified input arguments will overwrite all results generated during the previous run.</p>
 </div>
 </div>
-<section id="normal-distribution" class="level3">
-<h3 class="anchored" data-anchor-id="normal-distribution">Normal Distribution</h3>
+<section id="normal-distribution" class="level4">
+<h4 class="anchored" data-anchor-id="normal-distribution">Normal Distribution</h4>
 <p>The notebook associated with <strong>eva_pipeline</strong> for data from a normal distribution is the file <strong>eva_pipeline_normal.ipynb</strong>. The main objective of this pipeline is to estimate the parameters of <strong>stationary</strong> geometric mixture of gev models based on simulated data from a normal probability distribution and to exploit the fitted model to predict return levels and expected exceedances associated with given return periods. In addition, the true return levels of the underlying normal law are provided for comparison.</p>
 <p>The <strong>eva_pipeline</strong> for normal distribution requires three main information as input. The first is the number of normal data to simulate. This number must be assigned to the input argument <strong>n</strong>. The second and third are the mean and standard deviation parameters of the normal law to use. These two quantities must be assigned to the input arguments <strong>mean</strong> and <strong>sd</strong>, respectively.</p>
 <p>All numerical and graphical outputs are displayed in the notebook. Some numerical outputs are stored in the <strong>normal_distribution_results</strong> directory as csv files conventionally named as follows.</p>
@@ -423,8 +419,8 @@ Note
 </div>
 </div>
 </section>
-<section id="gamma-distribution" class="level3">
-<h3 class="anchored" data-anchor-id="gamma-distribution">Gamma Distribution</h3>
+<section id="gamma-distribution" class="level4">
+<h4 class="anchored" data-anchor-id="gamma-distribution">Gamma Distribution</h4>
 <p>The notebook associated with <strong>eva_pipeline</strong> for data from a gamma distribution is the file <strong>eva_pipeline_gamma.ipynb</strong>. The main objective of this pipeline is to estimate the parameters of <strong>stationary</strong> geometric mixture of gev models based on simulated data from a gamma probability distribution and to exploit the fitted model to predict return levels and expected exceedances associated with given return periods. In addition, the true return levels of the underlying gamma law are provided for comparison.</p>
 <p>The <strong>eva_pipeline</strong> for gamma distribution requires three main information as input. The first is the number of gamma data to simulate. This number must be assigned to the input argument <strong>n</strong>. The second and third are the shape and scale parameters of the gamma law to use. These two quantities must be assigned to the input arguments <strong>shape</strong> and <strong>scale</strong>, respectively.</p>
 <p>All numerical and graphical outputs are displayed in the notebook. Some numerical outputs are stored in the <strong>gamma_distribution_results</strong> directory as csv files conventionally named as follows.</p>
@@ -459,8 +455,8 @@ Note
 </div>
 </div>
 </section>
-<section id="gev-distribution" class="level3">
-<h3 class="anchored" data-anchor-id="gev-distribution">GEV Distribution</h3>
+<section id="gev-distribution" class="level4">
+<h4 class="anchored" data-anchor-id="gev-distribution">GEV Distribution</h4>
 <p>The notebook associated with <strong>eva_pipeline</strong> for data from a gev distribution is the file <strong>eva_pipeline_gev.ipynb</strong>. The main objective of this pipeline is to estimate the parameters of <strong>stationary</strong> geometric mixture of gev models based on simulated data from a gev probability distribution and to exploit the fitted model to predict return levels and expected exceedances associated with given return periods. In addition, the true return levels of the underlying gev law are provided for comparison.</p>
 <p>The <strong>eva_pipeline</strong> for gev distribution requires four main information as input. The first is the number of gev data to simulate. This number must be assigned to the input argument <strong>n</strong>. The second, third and fourth are the shape, scale and location parameters of the gev law to use. These three quantities must be assigned to the input arguments <strong>shape</strong>, <strong>scale</strong> and <strong>loc</strong>, respectively.</p>
 <p>All numerical and graphical outputs are displayed in the notebook. Some numerical outputs are stored in the <strong>gev_distribution_results</strong> directory as csv files conventionally named as follows.</p>
@@ -498,8 +494,8 @@ Note
 </div>
 </section>
 </section>
-<section id="sec-evarealdata" class="level2">
-<h2 class="anchored" data-anchor-id="sec-evarealdata">Application on real dataset</h2>
+<section id="sec-evarealdata" class="level3">
+<h3 class="anchored" data-anchor-id="sec-evarealdata">Application on real dataset</h3>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1079,6 +1075,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./statistical-models.html" class="pagination-link  aria-label=" statistical="" models"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Statistical models</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

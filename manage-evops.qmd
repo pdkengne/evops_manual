@@ -3,7 +3,7 @@ title: "Manage evops app"
 ---
 
 
-# Start evops app
+##  Start evops app
 
 :::{.callout-important}
 Before starting for the first time, create a folder in your computer which is dedicated to the evops app data in the host computer. To illustrate, we have created a folder called **workdir** at the location:
@@ -61,12 +61,12 @@ Open a Docker Desktop and follows the 13 steps outlined in this walkthrough illu
 
 
 
-# Stop evops app
+##  Stop evops app
 
 A docker container in which the evops app is running can be stopped either from the Docker Desktop or from the Web Browser. 
 
 
-## From Docker Desktop
+###  From Docker Desktop
 
 To stop a running docker container from Docker Desktop, one can proceed as follows.
 
@@ -83,7 +83,7 @@ To stop a running docker container from Docker Desktop, one can proceed as follo
 
 
 
-## From Web Browser
+###  From Web Browser
 
 
 To stop evops app which is open in a Web Browser, one can proceed as follows.
@@ -98,7 +98,7 @@ To stop evops app which is open in a Web Browser, one can proceed as follows.
 ![listing_013](./listing_013.jpg){width=100%}
 
 
-# Restart evops app
+##  Restart evops app
 
 To restart a stopped docker container associated with evops app, one can proceed as follows.
 
@@ -125,7 +125,7 @@ To restart a stopped docker container associated with evops app, one can proceed
 ![listing_016](./listing_016.jpg){width=100%}
 
 
-# View resource utilization
+##  View resource utilization
 
 
 To view resource utilization of a running container from Docker Desktop, one can proceed as follows.
@@ -149,7 +149,7 @@ To view resource utilization of a running container from Docker Desktop, one can
 
 
 
-# Delete evops app container
+##  Delete evops app container
 
 To delete a created docker container from Docker Desktop, one can proceed as follows.
 
@@ -170,7 +170,7 @@ To delete a created docker container from Docker Desktop, one can proceed as fol
 
 
 
-# Update evops app image
+##  Update evops app image
 
 Before the update of a docker image associated with the evops app, delete all docker containers (running or stopped) using the image to update.
 After that, one can follow the steps described below to update the **latest** version of docker image called **dkengne/evops** from Docker Desktop.

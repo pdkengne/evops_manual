@@ -239,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#extract-sample-data-esd-pipeline-optional" id="toc-extract-sample-data-esd-pipeline-optional" class="nav-link active" data-scroll-target="#extract-sample-data-esd-pipeline-optional">Extract Sample Data (esd) pipeline: <em>Optional</em></a></li>
+  <li><a href="#extract-sample-data-esd-pipeline-mandatory" id="toc-extract-sample-data-esd-pipeline-mandatory" class="nav-link active" data-scroll-target="#extract-sample-data-esd-pipeline-mandatory">Extract Sample Data (esd) pipeline: <em>Mandatory</em></a></li>
   <li><a href="#extract-transform-load-etl-pipeline-mandatory" id="toc-extract-transform-load-etl-pipeline-mandatory" class="nav-link" data-scroll-target="#extract-transform-load-etl-pipeline-mandatory">Extract Transform Load (etl) pipeline: <em>Mandatory</em></a></li>
   <li><a href="#outlier-data-extraction-ode-pipeline-optional" id="toc-outlier-data-extraction-ode-pipeline-optional" class="nav-link" data-scroll-target="#outlier-data-extraction-ode-pipeline-optional">Outlier Data Extraction (ode) pipeline: <em>Optional</em></a></li>
   <li><a href="#object-detection-statistics-ods-pipeline-recommended" id="toc-object-detection-statistics-ods-pipeline-recommended" class="nav-link" data-scroll-target="#object-detection-statistics-ods-pipeline-recommended">Object Detection Statistics (ods) pipeline: <em>Recommended</em></a></li>
@@ -310,16 +310,16 @@ Tip
 <p>Before rerunning a pipeline with modified input arguments on datasets from a given experimentation, it is recommended to delete all results generated during the previous run unless specify, in which case previous results will be overwritten.</p>
 </div>
 </div>
-<section id="extract-sample-data-esd-pipeline-optional" class="level2">
-<h2 class="anchored" data-anchor-id="extract-sample-data-esd-pipeline-optional">Extract Sample Data (esd) pipeline: <em>Optional</em></h2>
-<p>The notebook associated with <strong>esd_pipeline</strong> is the file <strong>esd_pipeline.ipynb</strong>. The main objective of <strong>esd_pipeline</strong> is to extract a small sample of size assigned to the variable <strong>data_sample_size</strong> from all data stored in the folder whose name is assigned to the variable <strong>experimentation_dir</strong> which contains the following elements.</p>
+<section id="extract-sample-data-esd-pipeline-mandatory" class="level2">
+<h2 class="anchored" data-anchor-id="extract-sample-data-esd-pipeline-mandatory">Extract Sample Data (esd) pipeline: <em>Mandatory</em></h2>
+<p>The notebook associated with <strong>esd_pipeline</strong> is the file <strong>esd_pipeline.ipynb</strong>. The main objective of <strong>esd_pipeline</strong> is to extract or make a copy of a sample of size assigned to the variable <strong>data_sample_size</strong> from all data stored in the folder whose name is assigned to the variable <strong>experimentation_dir</strong> which contains the elements listed below.</p>
 <ul>
 <li><p><strong>ground_truth_data</strong>: It is a variable for the name of the csv file of ground truth data.</p></li>
 <li><p><strong>estimated_data</strong>: It is a variable for the name of the csv file of estimated data.</p></li>
 <li><p><strong>error_data</strong>: It is a variable for the name of the csv file of error data.</p></li>
 <li><p><strong>images_dir</strong>: It is a variable for the name of the folder containing images.</p></li>
 </ul>
-<p>The extracted datasets are stored in the folder whose name is made of <strong>sample+experimentation_dir</strong>. Its contents are organized like that of the folder indicated in the variable <strong>experimentation_dir</strong>.</p>
+<p>Note that in order to make a copy of all data in the folder referenced by the variable <strong>experimentation_dir</strong>, it suffices to assign the value <strong>-1</strong> to the variable <strong>data_sample_size</strong>. The extracted datasets are stored in the folder whose name is made of <strong>sample+experimentation_dir</strong>. Its contents are organized like that of the folder indicated in the variable <strong>experimentation_dir</strong>.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -349,7 +349,7 @@ Tip
 </section>
 <section id="extract-transform-load-etl-pipeline-mandatory" class="level2">
 <h2 class="anchored" data-anchor-id="extract-transform-load-etl-pipeline-mandatory">Extract Transform Load (etl) pipeline: <em>Mandatory</em></h2>
-<p>The notebook associated with <strong>etl_pipeline</strong> is the file <strong>etl_pipeline.ipynb</strong>. The main objective of this pipeline is to construct the file <strong>merged_data.csv</strong>. This file contains information on the instantaneous positions and velocities of the car sensors studied, the statistics of occurrences as well as the areas and locations associated with all classes of traffic scene objects. To produce the file <strong>merged_data.csv</strong>, the <strong>etl_pipeline</strong> requires two main information as input. The former is the folder whose name is assigned to the variable <strong>experimentation_dir</strong> which contains the following elements.</p>
+<p>The notebook associated with <strong>etl_pipeline</strong> is the file <strong>etl_pipeline.ipynb</strong>. The main objective of this pipeline is to construct the file <strong>merged_data.csv</strong>. This file contains information on the instantaneous positions and velocities of the car sensors studied, the statistics of occurrences as well as the areas and locations associated with all classes of traffic scene objects. To produce the file <strong>merged_data.csv</strong>, the <strong>etl_pipeline</strong> requires two main information as input. The former is the folder whose name is assigned to the variable <strong>experimentation_dir</strong>. This folder must be generated by <strong>esd_pipeline</strong> since the running evops app container has all the privileges on it. It obviously contains the following elements.</p>
 <ul>
 <li><p><strong>ground_truth_data</strong>: It is a variable for the name of the csv file of ground truth data.</p></li>
 <li><p><strong>estimated_data</strong>: It is a variable for the name of the csv file of estimated data.</p></li>

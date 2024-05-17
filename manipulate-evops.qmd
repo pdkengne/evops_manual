@@ -102,6 +102,23 @@ To run a specific cell of an open pipeline notebook, one can proceed as follows.
 ![listing_029](./listing_029.jpg){width=100%}
 
 
+
+## Reset all pipeline cells
+
+
+All cells, even running ones, associated with a pipeline notebook can be reset as follows.
+
+1. Click on the considered open pipeline notebook tab in the main panel.
+
+2. Click on the **Kernel** tab from the Jupyter menu.
+
+3. Select **Restart Kernel** in the scrolling menu. This will stop and clear all outputs. The notebook can then rerun in a clean environment.
+
+
+![listing_045](./listing_045.jpg){width=100%}
+
+
+
 ##  Export all pipeline graphics
 
 
@@ -184,3 +201,30 @@ The csv file uploaded by the above procedure is available in **workspace** direc
 
 
 ![listing_042](./listing_042.jpg){width=100%}
+
+
+## Delete saved a pipeline output
+
+
+To delete a folder or csv file generated and saved by a pipeline in the **workspace** directory of the container running evops app, one can follow the instructions below.
+
+1. Click to hide or show the file browser.
+
+2. Click to display the folders of available pipelines and directories. 
+
+3. Double-click on the **workspace** directory to display its contents.
+
+4. Browse to find and right-click on the element to delete.
+
+5. Select **Delete** in the scrolling menu and confirm the action.
+
+
+
+
+![listing_046](./listing_046.jpg){width=100%}
+
+
+
+![listing_047](./listing_047.jpg){width=100%}
+
+

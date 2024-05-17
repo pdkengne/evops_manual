@@ -42,17 +42,17 @@ Moreover, the evops app pipelines can be classified into two groups.
 
 * The former group is dedicated to data wrangling from raw data collected during an experimentation which aims to evaluate the impact of kinematic parameters and traffic scene object classes on car localization errors.
 
-* The latter group focuses on learning and exploiting two types of [statistical models](statistical-models.qmd), namely **arithmetic** and **geometric** mixture of gev distributions.
+* The latter group focuses on learning and exploiting two types of [statistical models](statistical-models.qmd), namely **arithmetic** and **geometric** mixture of gev distributions. The mentioned arithmetic mixture model is fitted to the entire data and is used for short-term forecasting whereas the geometric mixture model focuses on extreme values and is used for long-term forecasting.
 
 
 
 #### Data operations
 
 
-The usage of this data pipeline is explained in [Data](data-operations.qmd). 
+The usage of data wrangling pipelines is explained in [Data](data-operations.qmd). 
 
 
 #### Model operations
 
 
-The user manual of this model pipeline is exposed in [Model](model-operations.qmd). It is important to note that the pipeline related to the geometric mixture of gev models can be executed on custom data while the pipeline related to the arithmetic mixture of gev models is designed to run only on pre-processed data from evops app data pipeline.
+The user manual of model pipelines is exposed in [Model](model-operations.qmd). It is important to note that the pipeline related to the geometric mixture of gev models can be executed on custom data while the pipeline related to the arithmetic mixture of gev models is designed to run only on pre-processed data from evops app data pipelines.

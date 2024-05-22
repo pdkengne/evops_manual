@@ -13,7 +13,7 @@ title: "Model operations"
 
 
 :::{.callout-note}
-Rerunning this pipeline with modified input arguments on datasets from a given experimentation will overwrite all results generated during the previous run.
+Rerunning this pipeline with eventually modified input arguments on the same dataset of a given experimentation will overwrite all results generated during the previous run.
 :::
 
 

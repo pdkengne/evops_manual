@@ -11,7 +11,7 @@ title: "Statistical models"
 The extreme value model to estimate is the arithmetic mixture of generalized extreme value (GEV) distribution $G_{\mathbb{S}}$ defined by
 
 $$
-G_{\mathbb{S}}(x;\omega) = \sum_{j = 1}^{p} \omega_j\, G^{\omega_j}_{\mathbb{S}, j}(x),
+G_{\mathbb{S}}(x;\omega) = \sum_{j = 1}^{p} \omega_j\, G_{\mathbb{S}, j}(x),
 $$
 where 
 $x \in \mathbb{R};$
@@ -28,7 +28,7 @@ The extreme value model to estimate is the arithmetic mixture of generalized ext
 
 
 $$
-G_{\mathbb{S}}(x;\omega|y) = \sum_{j = 1}^{p} \omega_j\, G^{\omega_j}_{\mathbb{S}, j}(x|y),
+G_{\mathbb{S}}(x;\omega|y) = \sum_{j = 1}^{p} \omega_j\, G_{\mathbb{S}, j}(x|y),
 $$
 where 
 $x \in \mathbb{R};$

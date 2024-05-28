@@ -301,14 +301,14 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="stationary-model">stationary model</h3>
 <p>The extreme value model to estimate is the arithmetic mixture of generalized extreme value (GEV) distribution <span class="math inline">\(G_{\mathbb{S}}\)</span> defined by</p>
 <p><span class="math display">\[
-G_{\mathbb{S}}(x;\omega) = \sum_{j = 1}^{p} \omega_j\, G^{\omega_j}_{\mathbb{S}, j}(x),
+G_{\mathbb{S}}(x;\omega) = \sum_{j = 1}^{p} \omega_j\, G_{\mathbb{S}, j}(x),
 \]</span> where <span class="math inline">\(x \in \mathbb{R};\)</span> <span class="math inline">\(\omega = \left(\omega_1, \cdots, \omega_p \right);\)</span> <span class="math inline">\(0 &lt; \omega_j \leq 1;\)</span> <span class="math inline">\(\sum_{j = 1}^{p}\omega_j = 1\)</span> and <span class="math inline">\(G_{\mathbb{S}, j}\)</span> is a GEV distribution with parameters <span class="math inline">\(\left(\gamma_{\mathbb{S}, j},\sigma_{\mathbb{S}, j},\mu_{\mathbb{S}, j}\right)\in \mathbb{R}^3.\)</span></p>
 </section>
 <section id="non-stationary-model" class="level3">
 <h3 class="anchored" data-anchor-id="non-stationary-model">non-stationary model</h3>
 <p>Let <span class="math inline">\(y = (y_1, \cdots, y_q)\in \mathbb{R}^q\)</span> be a vector of <span class="math inline">\(q\)</span> predictor variables. The extreme value model to estimate is the arithmetic mixture of generalized extreme value (GEV) distribution <span class="math inline">\(G_{\mathbb{S}}(\cdot|y)\)</span> defined by</p>
 <p><span class="math display">\[
-G_{\mathbb{S}}(x;\omega|y) = \sum_{j = 1}^{p} \omega_j\, G^{\omega_j}_{\mathbb{S}, j}(x|y),
+G_{\mathbb{S}}(x;\omega|y) = \sum_{j = 1}^{p} \omega_j\, G_{\mathbb{S}, j}(x|y),
 \]</span> where <span class="math inline">\(x \in \mathbb{R};\)</span> <span class="math inline">\(\omega = \left(\omega_1, \cdots, \omega_p \right);\)</span> <span class="math inline">\(0 &lt; \omega_j \leq 1;\)</span> <span class="math inline">\(\sum_{j = 1}^{p}\omega_j = 1\)</span> and <span class="math inline">\(G_{\mathbb{S}, j}(\cdot|y)\)</span> is a GEV distribution with parameters <span class="math inline">\(\left(\gamma_{\mathbb{S}, j},\sigma_{\mathbb{S}, j}(y),\mu_{\mathbb{S}, j}(y)\right)\in \mathbb{R}^3.\)</span></p>
 <p>with</p>
 <p><span class="math display">\[\mu_{\mathbb{S}, j}(y) = \mu_{\mathbb{S},j, 0} + \sum_{\ell = 1}^{q} \mu_{\mathbb{S},j,\ell}\, y_{\ell}\]</span></p>

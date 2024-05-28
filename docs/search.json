@@ -588,5 +588,38 @@
       "Data",
       "Data operations"
     ]
+  },
+  {
+    "objectID": "setup-docker.html#install-image-tools",
+    "href": "setup-docker.html#install-image-tools",
+    "title": "Setup docker desktop",
+    "section": "Install Image-Tools",
+    "text": "Install Image-Tools\nTo save a docker image as a .tar archive for sharing, the docker save command can be used. An archived Docker image can be loaded using the docker load command. To learn more about using these commands in a terminal, interested readers can visit the following web page https://docs.docker.com/desktop/backup-and-restore/. To perform these tasks in Docker Desktop, an extension called Image-Tools must be installed. This installation can be done through the three steps listed below.\n\nClick on Extensions in the left sidebar menu of Docker Desktop.\nType image-tools in the search input box.\nClick on the Install button associated with the found result to start the installation process.\n\n\n\n\nlisting_048",
+    "crumbs": [
+      "Install",
+      "Setup docker desktop"
+    ]
+  },
+  {
+    "objectID": "setup-evops.html#save-evops-app-image",
+    "href": "setup-evops.html#save-evops-app-image",
+    "title": "Setup evops app",
+    "section": "Save evops app image",
+    "text": "Save evops app image",
+    "crumbs": [
+      "Install",
+      "Setup evops app"
+    ]
+  },
+  {
+    "objectID": "setup-evops.html#load-evops-app-image",
+    "href": "setup-evops.html#load-evops-app-image",
+    "title": "Setup evops app",
+    "section": "Load evops app image",
+    "text": "Load evops app image",
+    "crumbs": [
+      "Install",
+      "Setup evops app"
+    ]
   }
 ]

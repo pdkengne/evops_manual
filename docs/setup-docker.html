@@ -238,6 +238,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#install-docker-desktop" id="toc-install-docker-desktop" class="nav-link active" data-scroll-target="#install-docker-desktop">Install Docker Desktop</a></li>
   <li><a href="#configure-docker-desktop" id="toc-configure-docker-desktop" class="nav-link" data-scroll-target="#configure-docker-desktop">Configure Docker Desktop</a></li>
   <li><a href="#start-docker-desktop" id="toc-start-docker-desktop" class="nav-link" data-scroll-target="#start-docker-desktop">Start Docker Desktop</a></li>
+  <li><a href="#install-image-tools" id="toc-install-image-tools" class="nav-link" data-scroll-target="#install-image-tools">Install Image-Tools</a></li>
   </ul>
 </nav>
     </div>
@@ -268,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="install-docker-desktop">Install Docker Desktop</h2>
 <p>To install Docker Desktop on Windows, a system administrator can follow the instructions below.</p>
 <ol type="1">
-<li><p>Download the .exe installer file using the following link <a href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe" class="uri">https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe</a></p></li>
+<li><p>Download the <strong>.exe</strong> installer file using the following link <a href="https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe" class="uri">https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe</a></p></li>
 <li><p>Double-click on the downloaded .exe installer file.</p></li>
 <li><p>When prompted, ensure the <strong>Use WSL 2 instead of Hyper-V</strong> option on the Configuration page is selected.</p></li>
 <li><p>Follow the instructions on the installation wizard to authorize the installer and proceed with the install.</p></li>
@@ -336,6 +337,21 @@ Note
 <figure class="figure">
 <p><img src="./listing_002.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
 <figcaption>listing_002</figcaption>
+</figure>
+</div>
+</section>
+<section id="install-image-tools" class="level2">
+<h2 class="anchored" data-anchor-id="install-image-tools">Install Image-Tools</h2>
+<p>To save a docker image as a <strong>.tar</strong> archive for sharing, the <strong>docker save</strong> command can be used. An archived Docker image can be loaded using the <strong>docker load</strong> command. To learn more about using these commands in a terminal, interested readers can visit the following web page <a href="https://docs.docker.com/desktop/backup-and-restore/" class="uri">https://docs.docker.com/desktop/backup-and-restore/</a>. To perform these tasks in Docker Desktop, an extension called <strong>Image-Tools</strong> must be installed. This installation can be done through the three steps listed below.</p>
+<ol type="1">
+<li><p>Click on <strong>Extensions</strong> in the left sidebar menu of Docker Desktop.</p></li>
+<li><p>Type <strong>image-tools</strong> in the search input box.</p></li>
+<li><p>Click on the <strong>Install</strong> button associated with the found result to start the installation process.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./listing_048.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>listing_048</figcaption>
 </figure>
 </div>
 

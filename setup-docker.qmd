@@ -11,7 +11,7 @@ This page contains the download URL and instructions on how to install and confi
 
 To install Docker Desktop on Windows, a system administrator can follow the instructions below.
 
-1. Download the .exe installer file using the following link
+1. Download the **.exe** installer file using the following link
 <https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe>
 
 2. Double-click on the downloaded .exe installer file.
@@ -78,4 +78,28 @@ For the first start, the Docker menu displays the Docker Subscription Service Ag
 
 
 ![listing_002](./listing_002.jpg){width=100%}
+
+
+## Install Image-Tools
+
+
+To save a docker image as a **.tar** archive for sharing, the **docker save** command can be used. An archived Docker image can be loaded using the **docker load** command. To learn more about using these commands in a terminal, interested readers can visit the following web page <https://docs.docker.com/desktop/backup-and-restore/>. To perform these tasks in Docker Desktop, an extension called **Image-Tools** must be installed. This installation can be done through the three steps listed below.
+
+1. Click on **Extensions** in the left sidebar menu of Docker Desktop.
+
+
+2. Type **image-tools** in the search input box.
+
+3. Click on the  **Install** button associated with the found result to start the installation process.
+
+
+![listing_048](./listing_048.jpg){width=100%}
+
+
+
+
+
+
+
+
 

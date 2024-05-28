@@ -605,7 +605,7 @@
     "href": "setup-evops.html#save-evops-app-image",
     "title": "Setup evops app",
     "section": "Save evops app image",
-    "text": "Save evops app image",
+    "text": "Save evops app image\n\n\n\n\n\n\nImportant\n\n\n\nBefore saving for the first time the docker image of the evops app, create a folder in your computer which is dedicated to the backup of evops app image in the host computer. To illustrate, we have created a folder called my_images at the location:\nC:\\Users\\HEWLETT-PACKARD\\Documents\\workdir\\my_images\n\n\nTo save a docker image as a .tar archive for sharing, one can proceed as follows in Docker Desktop on which the Image-Tools extension is installed.\n\nClick on Image-Tools in the left sidebar menu of Docker Desktop.\nClick on the Download icon of docker image to save. Note that the names of available docker images are located in the main panel under the RepoTags column. For instance, dkengne/evops:latest is the name of the latest version of evops app docker image.\nBrowse in the host computer to select the name of the folder in which to save the considered docker image.\nClick on the Sélectionner un dossier button to start the backup process.\n\n\n\n\nlisting_049\n\n\n\n\n\nlisting_050",
     "crumbs": [
       "Install",
       "Setup evops app"
@@ -616,7 +616,7 @@
     "href": "setup-evops.html#load-evops-app-image",
     "title": "Setup evops app",
     "section": "Load evops app image",
-    "text": "Load evops app image",
+    "text": "Load evops app image\nAn archived Docker image can be loaded into Docker Desktop that has the Image-Tools extension installed via the four steps listed below.\n\nClick on Image-Tools in the left sidebar menu of Docker Desktop.\nClick on the Import button in the main panel of Docker Desktop.\nBrowse in the host computer to select the name of the docker image to load. For instance, the latest version of evops app docker image is archived with the name dkengne_evops_latest.tar.\nClick on the Ouvrir button to start the backup restoration process.\n\n\n\n\nlisting_051\n\n\n\n\n\nlisting_052",
     "crumbs": [
       "Install",
       "Setup evops app"

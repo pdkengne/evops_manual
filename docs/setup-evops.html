@@ -304,9 +304,61 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="save-evops-app-image" class="level2">
 <h2 class="anchored" data-anchor-id="save-evops-app-image">Save evops app image</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before saving for the first time the docker image of the <strong>evops app</strong>, create a folder in your computer which is dedicated to the backup of evops app image in the host computer. To illustrate, we have created a folder called <strong>my_images</strong> at the location:</p>
+<pre class="{bash}"><code>C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images</code></pre>
+</div>
+</div>
+<p>To save a docker image as a <strong>.tar</strong> archive for sharing, one can proceed as follows in Docker Desktop on which the <strong>Image-Tools</strong> extension is installed.</p>
+<ol type="1">
+<li><p>Click on <strong>Image-Tools</strong> in the left sidebar menu of Docker Desktop.</p></li>
+<li><p>Click on the <strong>Download</strong> icon of docker image to save. Note that the names of available docker images are located in the main panel under the <strong>RepoTags</strong> column. For instance, <strong>dkengne/evops:latest</strong> is the name of the latest version of evops app docker image.</p></li>
+<li><p>Browse in the host computer to select the name of the folder in which to save the considered docker image.</p></li>
+<li><p>Click on the <strong>Sélectionner un dossier</strong> button to start the backup process.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./listing_049.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>listing_049</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./listing_050.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>listing_050</figcaption>
+</figure>
+</div>
 </section>
 <section id="load-evops-app-image" class="level2">
 <h2 class="anchored" data-anchor-id="load-evops-app-image">Load evops app image</h2>
+<p>An archived Docker image can be loaded into Docker Desktop that has the <strong>Image-Tools</strong> extension installed via the four steps listed below.</p>
+<ol type="1">
+<li><p>Click on <strong>Image-Tools</strong> in the left sidebar menu of Docker Desktop.</p></li>
+<li><p>Click on the <strong>Import</strong> button in the main panel of Docker Desktop.</p></li>
+<li><p>Browse in the host computer to select the name of the docker image to load. For instance, the latest version of evops app docker image is archived with the name <strong>dkengne_evops_latest.tar</strong>.</p></li>
+<li><p>Click on the <strong>Ouvrir</strong> button to start the backup restoration process.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./listing_051.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>listing_051</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./listing_052.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>listing_052</figcaption>
+</figure>
+</div>
 
 
 </section>

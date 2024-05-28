@@ -32,16 +32,50 @@ docker pull dkengne/evops:latest
 
 ## Save evops app image
 
+:::{.callout-important}
+Before saving for the first time the docker image of the **evops app**, create a folder in your computer which is dedicated to the backup of evops app image in the host computer. To illustrate, we have created a folder called **my_images** at the location:
+```{bash}
+C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images
+```
+:::
 
+
+To save a docker image as a **.tar** archive for sharing, one can proceed as follows in Docker Desktop on which the **Image-Tools** extension is installed.
+
+1. Click on **Image-Tools** in the left sidebar menu of Docker Desktop.
+
+2. Click on the **Download** icon of docker image to save. Note that the names of available docker images are located in the main panel under the **RepoTags** column. For instance, **dkengne/evops:latest** is the name of the latest version of evops app docker image.
+
+3. Browse in the host computer to select the name of the folder in which to save the considered docker image. 
+
+4. Click on the **Sélectionner un dossier** button to start the backup process.
+
+
+
+
+![listing_049](./listing_049.jpg){width=100%}
+
+
+![listing_050](./listing_050.jpg){width=100%}
 
 
 
 ## Load evops app image
 
 
+An archived Docker image can be loaded into Docker Desktop that has the **Image-Tools** extension installed via the four steps listed below.
+
+1. Click on **Image-Tools** in the left sidebar menu of Docker Desktop.
+
+2. Click on the **Import** button in the main panel of Docker Desktop.
+
+3. Browse in the host computer to select the name of the docker image to load. For instance, the latest version of evops app docker image is archived with the name **dkengne_evops_latest.tar**.
+
+4. Click on the **Ouvrir** button to start the backup restoration process.
 
 
+![listing_051](./listing_051.jpg){width=100%}
 
 
-
+![listing_052](./listing_052.jpg){width=100%}
 

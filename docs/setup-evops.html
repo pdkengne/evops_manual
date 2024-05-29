@@ -237,8 +237,16 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#open-windows-terminal" id="toc-open-windows-terminal" class="nav-link active" data-scroll-target="#open-windows-terminal">Open Windows Terminal</a></li>
   <li><a href="#download-evops-app-image" id="toc-download-evops-app-image" class="nav-link" data-scroll-target="#download-evops-app-image">Download evops app image</a></li>
-  <li><a href="#save-evops-app-image" id="toc-save-evops-app-image" class="nav-link" data-scroll-target="#save-evops-app-image">Save evops app image</a></li>
-  <li><a href="#load-evops-app-image" id="toc-load-evops-app-image" class="nav-link" data-scroll-target="#load-evops-app-image">Load evops app image</a></li>
+  <li><a href="#save-evops-app-image" id="toc-save-evops-app-image" class="nav-link" data-scroll-target="#save-evops-app-image">Save evops app image</a>
+  <ul class="collapse">
+  <li><a href="#from-docker-desktop" id="toc-from-docker-desktop" class="nav-link" data-scroll-target="#from-docker-desktop">From Docker Desktop</a></li>
+  <li><a href="#from-windows-terminal" id="toc-from-windows-terminal" class="nav-link" data-scroll-target="#from-windows-terminal">From Windows Terminal</a></li>
+  </ul></li>
+  <li><a href="#load-evops-app-image" id="toc-load-evops-app-image" class="nav-link" data-scroll-target="#load-evops-app-image">Load evops app image</a>
+  <ul class="collapse">
+  <li><a href="#from-docker-desktop-1" id="toc-from-docker-desktop-1" class="nav-link" data-scroll-target="#from-docker-desktop-1">From Docker Desktop</a></li>
+  <li><a href="#from-windows-terminal-1" id="toc-from-windows-terminal-1" class="nav-link" data-scroll-target="#from-windows-terminal-1">From Windows Terminal</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -286,10 +294,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="download-evops-app-image" class="level2">
 <h2 class="anchored" data-anchor-id="download-evops-app-image">Download evops app image</h2>
-<p>To download the latest version of the docker image associated with the <strong>extreme value operations</strong> (evops) apps, one can proceed as follows.</p>
+<p>To download the latest version of the docker image associated with the <strong>extreme value operations</strong> (evops) apps, one can proceed as follows <strong>after starting Docker Desktop</strong>.</p>
 <ol type="1">
 <li><p>Open a Windows Terminal.</p></li>
-<li><p>Copy and paste the following command in the Terminal:</p></li>
+<li><p>Copy and paste the following docker command in the Terminal:</p></li>
 </ol>
 <pre class="{bash}"><code>docker pull dkengne/evops:latest</code></pre>
 <ol start="3" type="1">
@@ -318,6 +326,8 @@ Important
 <pre class="{bash}"><code>C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images</code></pre>
 </div>
 </div>
+<section id="from-docker-desktop" class="level3">
+<h3 class="anchored" data-anchor-id="from-docker-desktop">From Docker Desktop</h3>
 <p>To save a docker image as a <strong>.tar</strong> archive for sharing, one can proceed as follows in Docker Desktop on which the <strong>Image-Tools</strong> extension is installed.</p>
 <ol type="1">
 <li><p>Click on <strong>Image-Tools</strong> in the left sidebar menu of Docker Desktop.</p></li>
@@ -338,8 +348,29 @@ Important
 </figure>
 </div>
 </section>
+<section id="from-windows-terminal" class="level3">
+<h3 class="anchored" data-anchor-id="from-windows-terminal">From Windows Terminal</h3>
+<p>To save a docker image as a <strong>.tar</strong> archive for sharing, one can proceed as described below in Windows Terminal <strong>after starting Docker Desktop</strong>. This two-step procedure exploits the <strong>docker save</strong> command whose use is explained on the following web page <a href="https://docs.docker.com/reference/cli/docker/image/save/" class="uri">https://docs.docker.com/reference/cli/docker/image/save/</a>.</p>
+<ol type="1">
+<li>Open a Windows Terminal. Copy and paste the docker command below in the open Terminal and hit the <strong>Enter</strong> key on the keyboard to display the list of available docker images. Note that the names of the found docker images and the related versions are respectively listed under the <strong>REPOSITORY</strong> and the <strong>TAG</strong> columns of the output.</li>
+</ol>
+<pre class="{bash}"><code>docker images</code></pre>
+<ol start="2" type="1">
+<li>Copy and paste the command below in the open Terminal and hit the <strong>Enter</strong> key on the keyboard to start the backup process. This command is made up of three parts. The first part is <strong>docker save</strong>. The second part specifies the argument of the <strong>output</strong> option which is the path to the <strong>.tar</strong> archive to create. The third part indicates the name and the version of the docker image to save in the form <strong>REPOSITORY:TAG</strong>. It follows that before using the command below, the location <strong><code>C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images</code></strong> must be replaced with a valid location in your computer.</li>
+</ol>
+<pre class="{bash}"><code>docker save --output C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images\dkengne_evops_latest.tar dkengne/evops:latest</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./listing_053.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>listing_053</figcaption>
+</figure>
+</div>
+</section>
+</section>
 <section id="load-evops-app-image" class="level2">
 <h2 class="anchored" data-anchor-id="load-evops-app-image">Load evops app image</h2>
+<section id="from-docker-desktop-1" class="level3">
+<h3 class="anchored" data-anchor-id="from-docker-desktop-1">From Docker Desktop</h3>
 <p>An archived Docker image can be loaded into Docker Desktop that has the <strong>Image-Tools</strong> extension installed via the four steps listed below.</p>
 <ol type="1">
 <li><p>Click on <strong>Image-Tools</strong> in the left sidebar menu of Docker Desktop.</p></li>
@@ -359,8 +390,27 @@ Important
 <figcaption>listing_052</figcaption>
 </figure>
 </div>
+</section>
+<section id="from-windows-terminal-1" class="level3">
+<h3 class="anchored" data-anchor-id="from-windows-terminal-1">From Windows Terminal</h3>
+<p>To load an archived docker image, one can proceed as described below in Windows Terminal <strong>after starting Docker Desktop</strong>. This two-step procedure exploits the <strong>docker load</strong> command whose use is explained on the following web page <a href="https://docs.docker.com/reference/cli/docker/image/load/" class="uri">https://docs.docker.com/reference/cli/docker/image/load/</a>.</p>
+<ol type="1">
+<li>Copy and paste the command below in the open Terminal and hit the <strong>Enter</strong> key on the keyboard to start the backup restoration process. This command is made up of two parts. The first part is <strong>docker load</strong>. The second part specifies the argument of the <strong>input</strong> option which is the path to the <strong>.tar</strong> archive to load. It follows that before using the command below, the file path <strong><code>C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images\dkengne_evops_latest.tar</code></strong> must be replaced with an appropriate file path in your computer.</li>
+</ol>
+<pre class="{bash}"><code>docker load --input C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images\dkengne_evops_latest.tar</code></pre>
+<ol start="2" type="1">
+<li>Copy and paste the docker command below in the open Terminal and hit the <strong>Enter</strong> key on the keyboard to check whether the list of available docker images includes the one just loaded. Note that the names of the found docker images and the related versions are respectively listed under the <strong>REPOSITORY</strong> and the <strong>TAG</strong> columns of the output.</li>
+</ol>
+<pre class="{bash}"><code>docker images</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./listing_054.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>listing_054</figcaption>
+</figure>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

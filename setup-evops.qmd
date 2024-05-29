@@ -17,11 +17,11 @@ To open  Windows Terminal one can proceed as follows.
 
 ##  Download evops app image
 
-To download the latest version of the docker image associated with the **extreme value operations** (evops) apps, one can proceed as follows.
+To download the latest version of the docker image associated with the **extreme value operations** (evops) apps, one can proceed as follows **after starting Docker Desktop**.
 
 1. Open a Windows Terminal.
 
-2. Copy and paste the following command in the Terminal:
+2. Copy and paste the following docker command in the Terminal:
 ```{bash}
 docker pull dkengne/evops:latest
 ```
@@ -38,6 +38,9 @@ Before saving for the first time the docker image of the **evops app**, create a
 C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images
 ```
 :::
+
+
+### From Docker Desktop
 
 
 To save a docker image as a **.tar** archive for sharing, one can proceed as follows in Docker Desktop on which the **Image-Tools** extension is installed.
@@ -59,8 +62,34 @@ To save a docker image as a **.tar** archive for sharing, one can proceed as fol
 ![listing_050](./listing_050.jpg){width=100%}
 
 
+### From Windows Terminal
+
+
+To save a docker image as a **.tar** archive for sharing, one can proceed as described below in Windows Terminal **after starting Docker Desktop**. This two-step procedure exploits the **docker save** command whose use is explained on the following web page <https://docs.docker.com/reference/cli/docker/image/save/>.
+
+1. Open a Windows Terminal. Copy and paste the docker command below in the open Terminal and hit the **Enter** key on the keyboard to display the list of available docker images. Note that the names of the found docker images and the related versions are respectively listed under the **REPOSITORY** and the **TAG** columns of the output.
+```{bash}
+docker images
+```
+
+
+2. Copy and paste the command below in the open Terminal and hit the **Enter** key on the keyboard to start the backup process. This command is made up of three parts. The first part is **docker save**. The second part specifies the argument of the **output** option which is the path to the **.tar** archive to create. The third part indicates the name and the version of the docker image to save in the form **REPOSITORY:TAG**. It follows that before using the command below, the location **`C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images`** must be replaced with a valid location in your computer.
+```{bash}
+docker save --output C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images\dkengne_evops_latest.tar dkengne/evops:latest
+```
+
+
+
+
+
+![listing_053](./listing_053.jpg){width=100%}
+
+
 
 ## Load evops app image
+
+
+### From Docker Desktop
 
 
 An archived Docker image can be loaded into Docker Desktop that has the **Image-Tools** extension installed via the four steps listed below.
@@ -79,3 +108,20 @@ An archived Docker image can be loaded into Docker Desktop that has the **Image-
 
 ![listing_052](./listing_052.jpg){width=100%}
 
+### From Windows Terminal
+
+
+To load an archived docker image, one can proceed as described below in Windows Terminal **after starting Docker Desktop**. This two-step procedure exploits the **docker load** command whose use is explained on the following web page <https://docs.docker.com/reference/cli/docker/image/load/>.
+
+1. Copy and paste the command below in the open Terminal and hit the **Enter** key on the keyboard to start the backup restoration process. This command is made up of two parts. The first part is **docker load**. The second part specifies the argument of the **input** option which is the path to the **.tar** archive to load.  It follows that before using the command below, the file path **`C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images\dkengne_evops_latest.tar`** must be replaced with an appropriate file path in your computer.
+```{bash}
+docker load --input C:\Users\HEWLETT-PACKARD\Documents\workdir\my_images\dkengne_evops_latest.tar
+```
+
+2. Copy and paste the docker command below in the open Terminal and hit the **Enter** key on the keyboard to check whether the list of available docker images includes the one just loaded. Note that the names of the found docker images and the related versions are respectively listed under the **REPOSITORY** and the **TAG** columns of the output.
+```{bash}
+docker images
+```
+
+
+![listing_054](./listing_054.jpg){width=100%}

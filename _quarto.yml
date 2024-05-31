@@ -47,6 +47,8 @@ format:
     # monofont: courrier new
     css: styles.css
     toc: true
+    toc-expand: true
+    toc-depth: 4
     mermaid:
       theme: forest    # forest dark neutral
 

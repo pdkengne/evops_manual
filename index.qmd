@@ -6,6 +6,7 @@ author:
       - Inria centre at the University Grenoble Alpes
 # author: "Pascal Alain Dkengne Sielenou and Stephane Girard"
 toc-expand: true
+toc-depth: 4
 ---
 
 

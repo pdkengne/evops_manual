@@ -405,10 +405,11 @@ Note
 <p>All numerical and graphical outputs are displayed in the notebook. Some numerical outputs are stored in the <strong>normal_distribution_results</strong> directory as csv files conventionally named as follows.</p>
 <ul>
 <li><p><strong>sample_normal_data.csv</strong>: It is the file which contains the simulated normal data using the provided input arguments.</p></li>
-<li><p><strong>gev_mixture_model_estimates.csv</strong>: It is the file which contains the estimated parameters of the <strong>stationary</strong> geometric gev mixture model fitted using the simulated normal data.</p></li>
+<li><p><strong>sample_normal_data_simulations_gev_mixture_model_estimates.csv</strong>: It is the file which contains the estimated parameters of the <strong>stationary</strong> geometric gev mixture model fitted using the simulated normal data.</p></li>
 <li><p><strong>sample_normal_data_simulations_gev_mixture_models.rds</strong>: It is the file which contains all useful information about the estimated <strong>stationary</strong> geometric gev mixture model. This file, if it exists, is loaded for model exploitation when the parameter <strong>use_pre_trained_models</strong> is set to <strong>TRUE</strong>.</p></li>
-<li><p><strong>return_levels.csv</strong>: It is the file which contains estimated and true return levels of the normal law. The return periods associated with these return levels range from the number of observations in the simulated normal data to one million times that number. The used default values of return periods can be modified as per needs.</p></li>
-<li><p><strong>expected_exceedance.csv</strong>: It is the file which contains the estimated expected exceedances of a given threshold related to the input normal law for all gev models in the fitted geometric gev mixture model. The default value of that threshold is the maximum value of the simulated normal data. This value can be modified as per needs.</p></li>
+<li><p><strong>sample_normal_data_simulations_return_levels.csv</strong>: It is the file which contains estimated and true return levels of the normal law. The return periods associated with these return levels range from the number of observations in the simulated normal data to one million times that number. The used default values of return periods can be modified as per needs.</p></li>
+<li><p><strong>sample_normal_data_simulations_custom_extrapolation.csv</strong>: It is the file which contains estimated and true return levels of the normal law. More precisely, this file contains the return levels from all component gev laws in the geometric mixture model. The return period associated with these return levels is the number of observations in the simulated normal data. This default value of return period can be modified as per needs.</p></li>
+<li><p><strong>sample_normal_data_simulations_expected_exceedance.csv</strong>: It is the file which contains the estimated expected exceedances of a given threshold related to the input normal law for all gev models in the fitted geometric gev mixture model. The default value of that threshold is the maximum value of the simulated normal data. This value can be modified as per needs.</p></li>
 </ul>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -427,10 +428,11 @@ Note
   D --&gt; O[output]
   O --&gt; E(normal_distribution_results)
   E --&gt; E1(sample_normal_data.csv)
-  E --&gt; E2(gev_mixture_model_estimates.csv)
+  E --&gt; E2(sample_normal_data_simulations_gev_mixture_model_estimates.csv)
   E --&gt; E5(sample_normal_data_simulations_gev_mixture_models.rds)
-  E --&gt; E3(return_levels.csv)
-  E --&gt; E4(expected_exceedance.csv)
+  E --&gt; E3(sample_normal_data_simulations_return_levels.csv)
+  E --&gt; E6(sample_normal_data_simulations_custom_extrapolation.csv)
+  E --&gt; E4(sample_normal_data_simulations_expected_exceedance.csv)
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -445,10 +447,11 @@ Note
 <p>All numerical and graphical outputs are displayed in the notebook. Some numerical outputs are stored in the <strong>gamma_distribution_results</strong> directory as csv files conventionally named as follows.</p>
 <ul>
 <li><p><strong>sample_gamma_data.csv</strong>: It is the file which contains the simulated gamma data using the provided input arguments.</p></li>
-<li><p><strong>gev_mixture_model_estimates.csv</strong>: It is the file which contains the estimated parameters of the <strong>stationary</strong> geometric gev mixture model fitted using the simulated gamma data.</p></li>
+<li><p><strong>sample_gamma_data_simulations_gev_mixture_model_estimates.csv</strong>: It is the file which contains the estimated parameters of the <strong>stationary</strong> geometric gev mixture model fitted using the simulated gamma data.</p></li>
 <li><p><strong>sample_gamma_data_simulations_gev_mixture_models.rds</strong>: It is the file which contains all useful information about the estimated <strong>stationary</strong> geometric gev mixture model. This file, if it exists, is loaded for model exploitation when the parameter <strong>use_pre_trained_models</strong> is set to <strong>TRUE</strong>.</p></li>
-<li><p><strong>return_levels.csv</strong>: It is the file which contains estimated and true return levels of the gamma law. The return periods associated with these return levels range from the number of observations in the simulated gamma data to one million times that number. The used default values of return periods can be modified as per needs.</p></li>
-<li><p><strong>expected_exceedance.csv</strong>: It is the file which contains the estimated expected exceedances of a given threshold related to the input gamma law for all gev models in the fitted geometric gev mixture model. The default value of that threshold is the maximum value of the simulated gamma data. This value can be modified as per needs.</p></li>
+<li><p><strong>sample_gamma_data_simulations_return_levels.csv</strong>: It is the file which contains estimated and true return levels of the gamma law. The return periods associated with these return levels range from the number of observations in the simulated gamma data to one million times that number. The used default values of return periods can be modified as per needs.</p></li>
+<li><p><strong>sample_gamma_data_simulations_custom_extrapolation.csv</strong>: It is the file which contains estimated and true return levels of the gamma law. More precisely, this file contains the return levels from all component gev laws in the geometric mixture model. The return period associated with these return levels is the number of observations in the simulated gamma data. This default value of return period can be modified as per needs.</p></li>
+<li><p><strong>sample_gamma_data_simulations_expected_exceedance.csv</strong>: It is the file which contains the estimated expected exceedances of a given threshold related to the input gamma law for all gev models in the fitted geometric gev mixture model. The default value of that threshold is the maximum value of the simulated gamma data. This value can be modified as per needs.</p></li>
 </ul>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -467,10 +470,11 @@ Note
   D --&gt; O[output]
   O --&gt; E(gamma_distribution_results)
   E --&gt; E1(sample_gamma_data.csv)
-  E --&gt; E2(gev_mixture_model_estimates.csv)
+  E --&gt; E2(sample_gamma_data_simulations_gev_mixture_model_estimates.csv)
   E --&gt; E5(sample_gamma_data_simulations_gev_mixture_models.rds)
-  E --&gt; E3(return_levels.csv)
-  E --&gt; E4(expected_exceedance.csv)
+  E --&gt; E3(sample_gamma_data_simulations_return_levels.csv)
+  E --&gt; E6(sample_gamma_data_simulations_custom_extrapolation.csv)
+  E --&gt; E4(sample_gamma_data_simulations_expected_exceedance.csv)
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -485,10 +489,11 @@ Note
 <p>All numerical and graphical outputs are displayed in the notebook. Some numerical outputs are stored in the <strong>gev_distribution_results</strong> directory as csv files conventionally named as follows.</p>
 <ul>
 <li><p><strong>sample_gev_data.csv</strong>: It is the file which contains the simulated gev data using the provided input arguments.</p></li>
-<li><p><strong>gev_mixture_model_estimates.csv</strong>: It is the file which contains the estimated parameters of the <strong>stationary</strong> geometric gev mixture model fitted using the simulated gev data.</p></li>
+<li><p><strong>sample_gev_data_simulations_gev_mixture_model_estimates.csv</strong>: It is the file which contains the estimated parameters of the <strong>stationary</strong> geometric gev mixture model fitted using the simulated gev data.</p></li>
 <li><p><strong>sample_gev_data_simulations_gev_mixture_models.rds</strong>: It is the file which contains all useful information about the estimated <strong>stationary</strong> geometric gev mixture model. This file, if it exists, is loaded for model exploitation when the parameter <strong>use_pre_trained_models</strong> is set to <strong>TRUE</strong>.</p></li>
-<li><p><strong>return_levels.csv</strong>: It is the file which contains estimated and true return levels of the gev law. The return periods associated with these return levels range from the number of observations in the simulated gev data to one million times that number. The used default values of return periods can be modified as per needs.</p></li>
-<li><p><strong>expected_exceedance.csv</strong>: It is the file which contains the estimated expected exceedances of a given threshold related to the input gev law for all gev models in the fitted geometric gev mixture model. The default value of that threshold is the maximum value of the simulated gev data. This value can be modified as per needs.</p></li>
+<li><p><strong>sample_gev_data_simulations_return_levels.csv</strong>: It is the file which contains estimated and true return levels of the gev law. The return periods associated with these return levels range from the number of observations in the simulated gev data to one million times that number. The used default values of return periods can be modified as per needs.</p></li>
+<li><p><strong>sample_gev_data_simulations_custom_extrapolation.csv</strong>: It is the file which contains estimated and true return levels of the gev law. More precisely, this file contains the return levels from all component gev laws in the geometric mixture model. The return period associated with these return levels is the number of observations in the simulated gev data. This default value of return period can be modified as per needs.</p></li>
+<li><p><strong>sample_gev_data_simulations_expected_exceedance.csv</strong>: It is the file which contains the estimated expected exceedances of a given threshold related to the input gev law for all gev models in the fitted geometric gev mixture model. The default value of that threshold is the maximum value of the simulated gev data. This value can be modified as per needs.</p></li>
 </ul>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -509,10 +514,11 @@ Note
   D --&gt; O[output]
   O --&gt; E(gev_distribution_results)
   E --&gt; E1(sample_gev_data.csv)
-  E --&gt; E2(gev_mixture_model_estimates.csv)
+  E --&gt; E2(sample_gev_data_simulations_gev_mixture_model_estimates.csv)
   E --&gt; E5(sample_gev_data_simulations_gev_mixture_models.rds)
-  E --&gt; E3(return_levels.csv)
-  E --&gt; E4(expected_exceedance.csv)
+  E --&gt; E3(sample_gev_data_simulations_return_levels.csv)
+  E --&gt; E6(sample_gev_data_simulations_custom_extrapolation.csv)
+  E --&gt; E4(sample_gev_data_simulations_expected_exceedance.csv)
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -542,7 +548,8 @@ Note
 <ul>
 <li><p><strong>csv_file_name+variable_name+gev_mixture_model_estimates.csv</strong>: It is the file which contains the estimated parameters of the <strong>stationary</strong> geometric gev mixture model fitted using the specified train data.</p></li>
 <li><p><strong>csv_file_name+variable_name+gev_mixture_models.rds</strong>: It is the file which contains all useful information about the estimated <strong>stationary</strong> geometric gev mixture model. This file, if it exists, is loaded for model exploitation when the parameter <strong>use_pre_trained_models</strong> is set to <strong>TRUE</strong>.</p></li>
-<li><p><strong>csv_file_name+variable_name+return_levels.csv</strong>: It is the file which contains return levels of the fitted variable. The return periods associated with these return levels range from the number of observations in the train data to one million times that number. The used default values of return periods can be modified as per needs.</p></li>
+<li><p><strong>csv_file_name+variable_name+return_levels.csv</strong>: It is the file which contains estimated return levels of the fitted variable. The return periods associated with these return levels range from the number of observations in the train data to one million times that number. The used default values of return periods can be modified as per needs.</p></li>
+<li><p><strong>csv_file_name+variable_name+custom_extrapolation.csv</strong>: It is the file which contains estimated and true return levels of the fitted variable. More precisely, this file contains the return levels from all component gev laws in the geometric mixture model. The return period associated with these return levels is the number of observations in the train data. This default value of return period can be modified as per needs.</p></li>
 <li><p><strong>csv_file_name+variable_name+expected_exceedance.csv</strong>: It is the file which contains the expected exceedances of a given threshold related to the fitted variable for all gev models in the fitted geometric gev mixture model. The default value of that threshold is the maximum value of the train data. This value can be modified as per needs.</p></li>
 </ul>
 <div class="cell" data-layout-align="default">
@@ -562,6 +569,7 @@ Note
   D --&gt; D1(csv_file_name+variable_name+gev_mixture_model_estimates.csv)
   D --&gt; D4(csv_file_name+variable_name+gev_mixture_models.rds)
   D --&gt; D2(csv_file_name+variable_name+return_levels.csv)
+  D --&gt; D5(csv_file_name+variable_name+custom_extrapolation.csv)
   D --&gt; D3(csv_file_name+variable_name+expected_exceedance.csv)
 </pre>
 </div>

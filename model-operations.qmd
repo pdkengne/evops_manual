@@ -297,6 +297,64 @@ flowchart LR
 
 
 
+####  Student Distribution
+
+
+The notebook associated with **eva_pipeline** for data from a student distribution is the file **eva_pipeline_student.ipynb**. The main objective of this pipeline is to estimate the parameters of **stationary** geometric mixture of gev models based on simulated data from a student probability distribution and to exploit the fitted model to predict return levels and expected exceedances associated with given return periods.
+In addition, the true return levels of the underlying student law are provided for comparison.
+
+
+The **eva_pipeline** for student distribution requires two main information as input. The first is the number of student data to simulate. This number must be assigned to the input argument **n**. The second is the degrees of freedom parameter of the student law to use. This quantity must be assigned to the input arguments **df**. Note that the estimated models are automatically stored for future use since **eva_pipeline** can take a while to complete. Thus, a Boolean value must be assigned to the input argument **use_pre_trained_models** to indicate whether to load and exploit pre-trained models provided that they exist.
+
+
+All numerical and graphical outputs are displayed in the notebook. Some numerical outputs are stored in the **student_distribution_results** directory as csv files conventionally named as follows.
+
+
+* **sample_student_data.csv**: It is the file which contains the simulated student data using the provided input arguments. 
+
+
+* **sample_student_data_simulations_gev_mixture_model_estimates.csv**: It is the file which contains the estimated parameters of the **stationary** geometric gev mixture model fitted using the simulated student data.
+
+
+* **sample_student_data_simulations_gev_mixture_models.rds**: It is the file which contains all useful information about the estimated **stationary** geometric gev mixture model. This file, if it exists, is loaded for model exploitation when the parameter **use_pre_trained_models** is set to  **TRUE**.
+
+
+* **sample_student_data_simulations_return_levels.csv**: It is the file which contains estimated and true return levels of the student law. The return periods associated with these return levels range from the number of observations in the simulated student data to one million times that number. The used default values of return periods can be modified as per needs. 
+
+
+* **sample_student_data_simulations_custom_extrapolation.csv**: It is the file which contains estimated and true return levels of the student law. More precisely, this file contains the return levels from all component gev laws in the geometric mixture model. The return period associated with these return levels is the number of observations in the simulated student data. This default value of return period can be modified as per needs. 
+
+
+* **sample_student_data_simulations_expected_exceedance.csv**: It is the file which contains the estimated expected exceedances of a given threshold related to the input student law for all gev models in the fitted geometric gev mixture model. The default value of that threshold is the maximum value of the simulated student data. This value can be modified as per needs.
+
+
+
+
+
+```{mermaid}
+flowchart LR
+I[Input] --> A(n)
+I[Input] --> B(df)
+I[Input] --> C1(use_pre_trained_models)
+A --> D{eva_pipeline}
+B --> D
+C1 --> D
+D --> O[output]
+O --> E(student_distribution_results)
+E --> E1(sample_student_data.csv)
+E --> E2(sample_student_data_simulations_gev_mixture_model_estimates.csv)
+E --> E5(sample_student_data_simulations_gev_mixture_models.rds)
+E --> E3(sample_student_data_simulations_return_levels.csv)
+E --> E6(sample_student_data_simulations_custom_extrapolation.csv)
+E --> E4(sample_student_data_simulations_expected_exceedance.csv)
+```
+
+
+
+
+
+
+
 ###  Application on real dataset {#sec-evarealdata}
 
 
